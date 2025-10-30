@@ -4,20 +4,20 @@ body {
 }
 
 header {
-    height: 60px;
+    height: 67px;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
 }
 
 .header-padding {
     display: flex;
     justify-content: space-between;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 136px;
+    padding-right: 136px;
 }
 
 .kochwelt-logo {
     margin-top: 10px;
-    height: 40px;
+    height: 47px;
 }
 
 .menu-right {
@@ -34,14 +34,56 @@ header {
 }
 
 .menu-links {
-    font-size: 16px;
+    font-size: 15px;
     color: black;
     text-decoration: none;
+    font-weight: 550;
 }
 
 .menu-links:hover {
-    color: green;
+    color: #008000;
     text-decoration-line: underline;
     text-decoration-thickness: 4px;
     text-underline-offset: 10px;
+}
+
+.tagesrezept {
+    margin-top: 48px;
+    margin-bottom: 48px;
+    padding-left: 136px;
+    padding-right: 136px;
+    display: flex;
+}
+
+.tagesrezept-img {
+    height: 200px;
+    border-radius: 8px;
+
+}
+
+.tagesrezept-text {
+    padding-left: 24px;
+}
+
+.tagesrezept-header {
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+.tagesrezept-beschreibung {
+    font-size: 14px;
+    margin-bottom: 48px;
+}
+
+.tagesrezept-button {
+    color: white;
+    background-color: #008000;
+    text-decoration: none;
+    font-size: 14px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 32px;
+    padding-right: 32px;
 }
