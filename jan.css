@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+}
+
+header {
+    height: 67px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+}
+
+.header-padding {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 136px;
+    padding-right: 136px;
+}
+
+.kochwelt-logo {
+    margin-top: 10px;
+    height: 47px;
+}
+
+.menu-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.menu {
+    width: 350px;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+}
+
+.menu-links {
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+    font-weight: 550;
+}
+
+.menu-links:hover {
+    color: #008000;
+    text-decoration-line: underline;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 10px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    align-items: center;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+h1 {
+    margin-block-start: 0px;
+}
+
+.rezept-img {
+    height: 175px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.schwierigkeitsgrad {
+    display: flex;
+    height: 100px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f4f0;
+    border-radius: 8px;
+    margin: 5px;
+    gap: 6px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.schwierigkeitsgrad-img {
+    height: 15px;
+}
+
+.portion-group {
+    display: flex;
+    align-items: center;
+}
+
+label {
+    padding-right: 10px;
+}
+
+.input-button {
+    display: flex;
+    align-items: center;
+}
+
+input {
+    height: 30px;
+    width: 120px;
+    padding-top: 10px;
+    border: 1px solid #f3f4f0;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    text-align: center;
+}
+
+button {
+    background-color: green;
+    color: white;
+    border: none;
+    height: 30px;
+    width: 120px;
+    cursor: pointer;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
