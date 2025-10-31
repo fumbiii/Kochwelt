@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochwelt</title>
+    <link rel="stylesheet" href="jan.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header-padding">
+            <a href="hauptseite-index.html">
+            <img class="kochwelt-logo" src="img/logo-zusammen.png" alt="Kochwelt-Logo">
+            </a>
+            <nav class="menu-right">
+                <div class="menu">
+                    <a class="menu-links" href="hauptseite-index.html">Start</a>
+                    <a class="menu-links" href="marcel.html">Rezept des Tages</a>
+                    <a class="menu-links" href="kontakt.html">Kontakt</a>
+                    <a class="menu-links" href="impressum.html">Impressum</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Möhren Ingwer Suppe</h1>
+        <img class="rezept-img" src="./img/karotten-ingwer-suppe.jpg" alt="Ingwersuppe Bild">
+
+        <section class="schwierigkeitsgrad">
+            <div class="icons">
+                <img class="schwierigkeitsgrad-img" src="./img/icons/clock-regular.svg" alt="clock-img">
+                <p class="p-schwierigkeitsgrad">40 Min.</p>
+            </div>
+            <div class="icons">
+                <img class="schwierigkeitsgrad-img" src="./img/icons/brain-solid.svg" alt="brain-img">
+                <p class="p-schwierigkeitsgrad">simpel</p>
+            </div>
+            <div class="icons">
+                <img class="schwierigkeitsgrad-img" src="./img/icons/calendar-alt-regular.svg" alt="calender-img">
+                <p class="p-schwierigkeitsgrad">31.10.2025</p>
+            </div>
+        </section>
+
+        <div class="portion-group">
+            <label for="input-portion">Zutaten für</label>
+            <div class="input-button">
+                <input id="input-portion" type="number" max="8" min="1" value="1">
+                <button type="submit" onclick="calculateRecipe_Ingwersuppe()">
+              Portionen
+                </button>
+            </div>
+        </div>
+
+    </main>
+</body>
+</html>
