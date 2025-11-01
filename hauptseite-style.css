@@ -143,6 +143,19 @@ h2 {
 
 p  { 
     margin-top: 5px;
+    text-decoration: none;
+}
+
+.rezept-text {
+    text-decoration: none;
+    color: black;
+}
+
+.rezept-text:hover {
+    color: #008000;
+    text-decoration-line: underline;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 10px;
 }
 
 .footer-socials {
@@ -151,3 +164,5 @@ p  {
    justify-content: space-evenly;
    width: 150px;
 }
+
+
