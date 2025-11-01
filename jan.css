@@ -128,3 +128,27 @@ button {
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
 }
+
+footer {
+    height: 100vh;
+    background-color: #403B3B;
+}
+
+.footer-content {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 136px;
+}
+
+.footer-content img {
+    height: 47px;
+}
+
+.footer-socials {
+    display: flex;
+    padding-right: 136px;
+   justify-content: space-evenly;
+   width: 150px;
+}
