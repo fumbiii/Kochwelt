@@ -102,6 +102,7 @@ footer {
     padding-left: 136px;
     padding-top: 20px;
     padding-bottom: 40px;
+    cursor: default;
 }
 
 .icons{
@@ -157,4 +158,71 @@ button {
 .input-button {
     display: flex;
     align-items: center;
+}
+
+.zubereitung-section {
+    gap: 16px;
+}
+
+.zubereitung {
+    display: flex;
+    padding-left: 136px;
+    padding-right: 136px;
+    gap: 16px;
+    cursor: default;
+}
+
+.zubereitung-header {
+    font-size: 24px;
+    padding-bottom: 16px;
+    padding-left: 136px;
+}
+
+.zubereitung-zeit {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding-right: 10px;
+    padding-left: 10px;
+    
+    border-radius: 8px;
+    background-color:#f3f4f0;
+}
+
+.zubereitung-zeit img {
+    height: 20px;
+}
+
+.zubereitung-steps {
+    padding-top: 30px;
+    padding-left: 136px;
+    padding-right: 136px;
+    gap : 22px;
+}
+
+.ersteller-section {
+    padding-top: 20px;
+}
+
+.ersteller-header {
+    padding-left: 136px;
+}
+
+.ersteller-info {
+    display: flex;
+    align-items: center;
+    padding-left: 136px;
+    padding-bottom: 50px;
+}
+
+.ersteller-info img {
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.ersteller-name {
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 20px;
 }

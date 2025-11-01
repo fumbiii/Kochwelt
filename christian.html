@@ -16,11 +16,11 @@
     <header>
       <div class="header-padding">
         <a href="hauptseite-index.html">
-        <img
-          class="kochwelt-logo"
-          src="img/logo-zusammen.png"
-          alt="Kochwelt-Logo"
-        />
+          <img
+            class="kochwelt-logo"
+            src="img/logo-zusammen.png"
+            alt="Kochwelt-Logo"
+          />
         </a>
         <div class="menu-right">
           <div class="menu">
@@ -33,36 +33,109 @@
       </div>
     </header>
     <section class="kaiserschmarren-section">
-        <h1 class="header-kaiserschmarren">Kaiserschmarren</h1>
-        <div class="kaiserschmarren-img">
-        <img class="Kaiserschmarren" src="img/kaiserschmarren.jpg" alt="Kaiserschmarren Bild" />
-    </div>
-        <section class="schwierigkeitsgrad">
-            <div class="icons">
-                <img class="schwierigkeitsgrad-img" src="./img/icons/clock-regular.svg" alt="clock-img">
-                <p class="p-schwierigkeitsgrad">30 Min.</p>
-            </div>
-            <div class="icons">
-                <img class="schwierigkeitsgrad-img" src="./img/icons/brain-solid.svg" alt="brain-img">
-                <p class="p-schwierigkeitsgrad">leicht</p>
-            </div>
-            <div class="icons">
-                <img class="schwierigkeitsgrad-img" src="./img/icons/calendar-alt-regular.svg" alt="calender-img">
-                <p class="p-schwierigkeitsgrad">01.11.2025</p>
-            </div>
-        </section>
-
-        <div class="portion-group">
-            <label for="input-portion">Zutaten für</label>
-            <div class="input-button">
-                <input id="input-portion" type="number" max="8" min="1" value="1">
-                <button type="submit" onclick="calculateRecipe_Kaiserschmarren()">
-              Portionen
-                </button>
-            </div>
+      <h1 class="header-kaiserschmarren">Kaiserschmarren</h1>
+      <div class="kaiserschmarren-img">
+        <img
+          class="Kaiserschmarren"
+          src="img/kaiserschmarren.jpg"
+          alt="Kaiserschmarren Bild"
+        />
+      </div>
+      <section class="schwierigkeitsgrad">
+        <div class="icons">
+          <img
+            class="schwierigkeitsgrad-img"
+            src="./img/icons/clock-regular.svg"
+            alt="clock-img"
+          />
+          <p class="p-schwierigkeitsgrad">30 Min.</p>
         </div>
+        <div class="icons">
+          <img
+            class="schwierigkeitsgrad-img"
+            src="./img/icons/brain-solid.svg"
+            alt="brain-img"
+          />
+          <p class="p-schwierigkeitsgrad">leicht</p>
+        </div>
+        <div class="icons">
+          <img
+            class="schwierigkeitsgrad-img"
+            src="./img/icons/calendar-alt-regular.svg"
+            alt="calender-img"
+          />
+          <p class="p-schwierigkeitsgrad">01.11.2025</p>
+        </div>
+      </section>
+
+      <div class="portion-group">
+        <label for="input-portion">Zutaten für</label>
+        <div class="input-button">
+          <input id="input-portion" type="number" max="8" min="1" value="1" />
+          <button type="submit" onclick="calculateRecipe_Kaiserschmarren()">
+            Portionen
+          </button>
+        </div>
+      </div>
     </section>
 
+    <section class="zubereitung-section">
+      <h2 class="zubereitung-header">Zubereitung</h2>
+      <div class="zubereitung">
+      <div class="zubereitung-zeit">
+        <img
+          class="zubereitung-zeit-img"
+          src="img/icons/clock-regular.svg"
+          alt="clock-img"
+        />
+        <p class="zubereitung-zeit-text">ca. 30 Minuten</p>
+      </div>
+      <div class="zubereitung-zeit">
+        <img
+          class="zubereitung-zeit-img"
+          src="img/icons/clock-regular.svg"
+          alt="clock-img"
+        />
+        <p class="zubereitung-zeit-text">Gesamtzeit ca. 30 Minuten</p>
+      </div>
+      </div>
+      <ol class="zubereitung-steps">
+        <li>
+          Milch, Mehl, Zucker und Vanillezucker glatt rühren und etwas quellen
+          lassen
+        </li>
+        <li>
+          Eier trennen, Eiklar in eine Rührschüssel geben und Dotter unter die
+          Milch-Mehlmasse mischen
+        </li>
+        <li>
+          Eiweiß mit einer Prise Salz zu festem Schnee schlagen und vorsichtig
+          unterheben
+        </li>
+        <li>
+          Butter in einer Pfanne erhitzen, ein Viertel der Schmarrenmasse in die
+          Pfanne gießen
+        </li>
+        <li>
+          Schmarren in vier Teile teilen, wenden und auf der zweiten Seite
+          fertig backen.
+        </li>
+        <li>
+          Schmarren in mundgrechte Stücke zereißen, leicht bezuckern und mit
+          Apfelmus oder Johannisbeeren servieren
+        </li>
+      </ol>
+    </section>
+
+    <section class="ersteller-section">
+      <h3 class="ersteller-header">Rezept erstellt von</h3>
+      <div class="ersteller-info">
+        <img class="ersteller-img " src="img/profile.png" alt="Christian Bild" />
+        <p class="ersteller-name">Christian</p>
+      </div>
+
+
+    </section>
     <footer>
       <div class="footer-content">
         <img
@@ -71,19 +144,19 @@
           alt="Kochwelt-Logo weiß"
         />
         <div class="footer-socials">
-            <a href="https://www.facebook.com/" target="_blank">
-          <img
-            class="footer-social-icon"
-            src="img/facebook_logo.svg"
-            alt="Instagram-Icon"
-          />
-            </a>
-            <a href="https://www.instagram.com/" target="_blank">
-          <img
-            class="footer-social-icon"
-            src="img/instagram_logo.svg"
-            alt="Twitter-Icon"
-          />
+          <a href="https://www.facebook.com/" target="_blank">
+            <img
+              class="footer-social-icon"
+              src="img/facebook_logo.svg"
+              alt="Instagram-Icon"
+            />
+          </a>
+          <a href="https://www.instagram.com/" target="_blank">
+            <img
+              class="footer-social-icon"
+              src="img/instagram_logo.svg"
+              alt="Twitter-Icon"
+            />
           </a>
         </div>
       </div>
