@@ -63,6 +63,13 @@ footer {
     height: 47px;
 }
 
+.footer-socials {
+    display: flex;
+    padding-right: 136px;
+   justify-content: space-evenly;
+   width: 150px;
+}
+
 .header-kaiserschmarren{
     font-size: 36px;
     padding-left: 136px;
