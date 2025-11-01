@@ -80,7 +80,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f3f4f0;
+    background-color: #ededed;
     border-radius: 8px;
     margin: 5px;
     gap: 6px;
@@ -129,26 +129,149 @@ button {
     border-bottom-right-radius: 8px;
 }
 
+ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+ul li:nth-child(odd) {
+    background-color: #ededed;
+    border-radius: 8px;
+}
+
+.section-zubereitung-icons {
+    display: flex;
+    height: 40px;
+}
+
+.nährwerte-angaben {
+    text-align: center;
+}
+
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    unicode-bidi: isolate;
+    border-spacing: 2px;
+    border-color: gray;
+    border-collapse: collapse;
+}
+
+table th {
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+table th:first-child {
+    border-left: none;
+    padding-right: 40px;
+    padding-left: 0px;
+}
+
+table th:last-child {
+    border-right: none;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+table td {
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+table td:first-child {
+    border-left: none;
+    padding-right: 40px;
+    padding-left: 0px;
+}
+
+table td:last-child {
+    border-right: none;
+    padding-right: 40px;
+    padding-left: 40px
+}
+
+h4 {
+    padding-top: 24px;
+}
+
+.profile-pic-name {
+    display: flex;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+}
+
+.name {
+    padding-left: 20px;
+    padding-right: 50px;
+}
+
 footer {
-    height: 100vh;
-    background-color: #403B3B;
+    display: flex;
+    background-color: #403b3b;
+    align-items: center;
+    height: 150px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .footer-content {
-    height: 100vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 136px;
+    height: 100px;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
-.footer-content img {
-    height: 47px;
+.kochwelt-weiß {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo {
+    height: 64px;
+    filter: invert(100%);
+}
+
+.datenschutz-impressum {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    gap: 16px;
+}
+
+.datenschutz-impressum:hover {
+    color: green;
 }
 
 .footer-socials {
     display: flex;
-    padding-right: 136px;
-   justify-content: space-evenly;
-   width: 150px;
+    gap: 16px;
 }
