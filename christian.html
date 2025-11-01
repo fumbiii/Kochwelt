@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="christian.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Kochwelt</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-padding">
+        <img
+          class="kochwelt-logo"
+          src="img/logo-zusammen.png"
+          alt="Kochwelt-Logo"
+        />
+        <div class="menu-right">
+          <div class="menu">
+            <a class="menu-links" href="hauptseite-index.html">Start</a>
+            <a class="menu-links" href="marcels-html.html">Rezept des Tages</a>
+            <a class="menu-links" href="kontakt.html">Kontakt</a>
+            <a class="menu-links" href="impressum.html">Impressum</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="kaiserschmarren-section">
+        <h1 class="header-kaiserschmarren">Kaiserschmarren</h1>
+        <div class="kaiserschmarren-img">
+        <img class="Kaiserschmarren" src="img/kaiserschmarren.jpg" alt="Kaiserschmarren Bild" />
+    </div>
+        <section class="schwierigkeitsgrad">
+            <div class="icons">
+                <img class="schwierigkeitsgrad-img" src="./img/icons/clock-regular.svg" alt="clock-img">
+                <p class="p-schwierigkeitsgrad">30 Min.</p>
+            </div>
+            <div class="icons">
+                <img class="schwierigkeitsgrad-img" src="./img/icons/brain-solid.svg" alt="brain-img">
+                <p class="p-schwierigkeitsgrad">leicht</p>
+            </div>
+            <div class="icons">
+                <img class="schwierigkeitsgrad-img" src="./img/icons/calendar-alt-regular.svg" alt="calender-img">
+                <p class="p-schwierigkeitsgrad">01.11.2025</p>
+            </div>
+        </section>
+
+        <div class="portion-group">
+            <label for="input-portion">Zutaten für</label>
+            <div class="input-button">
+                <input id="input-portion" type="number" max="8" min="1" value="1">
+                <button type="submit" onclick="calculateRecipe_Kaiserschmarren()">
+              Portionen
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <img
+          class="kochwelt-weiß"
+          src="img/logo-modified.png"
+          alt="Kochwelt-Logo weiß"
+        />
+        <div class="footer-socials">
+          <img
+            class="footer-social-icon"
+            src="img/facebook_logo.svg"
+            alt="Instagram-Icon"
+          />
+          <img
+            class="footer-social-icon"
+            src="img/instagram_logo.svg"
+            alt="Twitter-Icon"
+          />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
