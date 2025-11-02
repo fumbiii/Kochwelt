@@ -1,228 +1,458 @@
 body {
-    margin: 0;
-    font-family: "Raleway", sans-serif;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
 }
 
 header {
-    height: 67px;
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+  height: 67px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
 }
 
 .header-padding {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 136px;
-    padding-right: 136px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 136px;
+  padding-right: 136px;
 }
 
 .kochwelt-logo {
-    margin-top: 10px;
-    height: 47px;
+  margin-top: 10px;
+  height: 47px;
 }
 
 .menu-right {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .menu {
-    width: 350px;
-    display: flex;
-    justify-content: space-around;
-    align-items: end;
+  width: 350px;
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
 }
 
 .menu-links {
-    font-size: 15px;
-    color: black;
-    text-decoration: none;
-    font-weight: 550;
+  font-size: 15px;
+  color: black;
+  text-decoration: none;
+  font-weight: 550;
 }
 
 .menu-links:hover {
-    color: #008000;
-    text-decoration-line: underline;
-    text-decoration-thickness: 4px;
-    text-underline-offset: 10px;
+  color: #008000;
+  text-decoration-line: underline;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 10px;
+}
+
+* {
+  box-sizing: border-box;
 }
 footer {
-    height: 100vh;
-    background-color: #403B3B;
+  display: flex;
+  background-color: #403b3b;
+  align-items: center;
+  height: 150px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .footer-content {
-    height: 100vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 136px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .footer-content img {
-    height: 47px;
+  height: 47px;
 }
 
 .footer-socials {
-    display: flex;
-    padding-right: 136px;
-   justify-content: space-evenly;
-   width: 150px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 150px;
 }
 
-.header-kaiserschmarren{
-    font-size: 36px;
-    padding-left: 136px;
-    padding-right: 136px;
+.kochwelt-weiß {
+  height: 64px;
+  filter: invert(100%);
 }
 
-.kaiserschmarren-img{
-    display: flex;
-    justify-content: center;
-    padding-top: 24px;
-   height: 150px;
-    padding-left: 136px;
-    padding-right: 136px;
+.datenschutz-impressum {
+  color: white;
+  text-decoration: none;
+  padding: 6px;
+  
+}
+
+.datenschutz-impressum:hover {
+  color: green;
+}
+
+.header-kaiserschmarren {
+  font-size: 36px;
+  padding-left: 136px;
+  padding-right: 136px;
+}
+
+.kaiserschmarren-img {
+  display: flex;
+  justify-content: center;
+  padding-top: 24px;
+  padding-left: 136px;
+  padding-right: 136px;
 }
 
 .kaiserschmarren-img img {
-    border-radius: 8px;
-    height: 150px;
-    width: 100%;
-    object-fit: cover;
+  border-radius: 8px;
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
 }
 
-
-
-.schwierigkeitsgrad{
-    display: flex;
-    gap: 16px;
-    align-items: center;
-    height: 40px;
-    padding-left: 136px;
-    padding-top: 20px;
-    padding-bottom: 40px;
-    cursor: default;
+.schwierigkeitsgrad {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  height: 40px;
+  padding-left: 136px;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  cursor: default;
 }
 
-.icons{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f3f4f0;
-    border-radius: 8px;
-    gap: 6px;
-    padding-right: 10px;
-    padding-left: 10px;
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f3f4f0;
+  border-radius: 8px;
+  gap: 6px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .icons img {
-    height: 25px;
+  height: 25px;
 }
 
 .portion-group {
-    display: flex;
-    align-items: center;
-    padding-left: 136px;
-    padding-top: 20px;
-    padding-bottom: 40px;
+  display: flex;
+  align-items: center;
+  padding-left: 136px;
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
 
 label {
-    padding-right: 10px;
+  padding-right: 10px;
 }
 
 input {
-    height: 28px;
-    width: 120px;
-    border: 1px solid #f3f4f0;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-    text-align: center;
-    padding-bottom: 0px;
-    padding-top: 0px;
+  height: 28px;
+  width: 120px;
+  border: 1px solid #f3f4f0;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  text-align: center;
+  padding-bottom: 0px;
+  padding-top: 0px;
 }
 
 button {
-    background-color: green;
-    color: white;
-    border: none;
-    height: 30px;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-    cursor: pointer;
+  background-color: green;
+  color: white;
+  border: none;
+  height: 30px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  cursor: pointer;
 }
 
 .input-button {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+}
+
+.zutaten-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-left: 136px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+ul li:nth-child(odd) {
+  background-color: #ededed;
+  border-radius: 8px;
+}
+
+li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
 }
 
 .zubereitung-section {
-    gap: 16px;
+  gap: 16px;
 }
 
 .zubereitung {
-    display: flex;
-    padding-left: 136px;
-    padding-right: 136px;
-    gap: 16px;
-    cursor: default;
+  display: flex;
+  padding-left: 136px;
+  padding-right: 136px;
+  gap: 16px;
+  cursor: default;
 }
 
 .zubereitung-header {
-    font-size: 24px;
-    padding-bottom: 16px;
-    padding-left: 136px;
+  font-size: 24px;
+  padding-left: 136px;
 }
 
 .zubereitung-zeit {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    padding-right: 10px;
-    padding-left: 10px;
-    
-    border-radius: 8px;
-    background-color:#f3f4f0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding-right: 10px;
+  padding-left: 10px;
+
+  border-radius: 8px;
+  background-color: #f3f4f0;
 }
 
 .zubereitung-zeit img {
-    height: 20px;
+  height: 20px;
 }
 
 .zubereitung-steps {
-    padding-top: 30px;
-    padding-left: 136px;
-    padding-right: 136px;
-    gap : 22px;
+  padding-top: 30px;
+  padding-left: 136px;
+  padding-right: 136px;
+  gap: 22px;
 }
 
 .ersteller-section {
-    padding-top: 20px;
+  padding-top: 20px;
 }
 
 .ersteller-header {
-    padding-left: 136px;
+  padding-left: 136px;
 }
 
 .ersteller-info {
-    display: flex;
-    align-items: center;
-    padding-left: 136px;
-    padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 136px;
+  padding-bottom: 50px;
 }
 
 .ersteller-info img {
-    height: 100px;
-    border-radius: 50%;
-    margin-right: 12px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 12px;
 }
 
 .ersteller-name {
-    font-size: 18px;
-    font-weight: 600;
-    margin-left: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+@media (max-width: 1000px) {
+    .header-padding {
+        padding-right: 50px;
+
+    }
+}
+
+@media (max-width: 680px) {
+    .menu-right {
+       display: none;
+    }
+}
+
+@media (max-width: 680px) {
+    .header-padding {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 680px) {
+    .header-kaiserschmarren {
+        display: flex;
+        justify-content: center;
+    }
+    }
+
+    @media (max-width: 550px) {
+    .kaiserschmarren-img {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media (max-width: 550px) {
+    .schwierigkeitsgrad {
+        padding-left: 20px;
+        padding-right: 20px;
+        flex-direction: column;
+        padding-top: 20px;
+        padding-bottom: 200px;
+    }
+}
+@media (max-width: 550px) {
+    .portion-group {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 550px) {
+    .zutaten-section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 550px) {
+    .zubereitung-header {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 550px) {
+    .zubereitung {
+        padding-left: 20px;
+        padding-right: 20px;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 550px) {
+    .zubereitung-steps {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 550px) {
+    .ersteller-header {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+}
+
+@media (max-width: 550px) {
+    .ersteller-info {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 550px) {
+    .ersteller-name {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 550px) {
+    .icons {
+
+    }
+}
+
+@media (max-width: 400px) {
+    .header-kaiserschmarren {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 400px) {
+    .p-schwierigkeitsgrad {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 550px) {
+    .zutaten-header {
+        display: flex;
+        justify-content: center;
+        font-size: 25px; 
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 550px) {
+    .ersteller-info img {
+        margin: 0;
+    }
+}
+
+@media (max-width: 550px) {
+    .footer-socials img {
+        height: 40px;
+        width: 40px;
+    }
+}
+@media (max-width: 550px) {
+    .footer-socials{
+        gap: 5px;
+    }
+}
+
+@media (max-width: 550px) {
+    footer {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+@media (max-width: 550px) {
+    .datenschutz-impressum {
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+    }
+}
+
+@media (max-width: 550px) {
+    li {
+    font-size: 15px;
+    }
+}
+
+@media (max-width: 550px) {
+    .portion-group {
+        font-size: 15px;
+        justify-content: center;
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 550px) {
+    .zubereitung-zeit-text {
+        font-size: 15px;
+    }
 }
