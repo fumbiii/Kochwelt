@@ -91,7 +91,6 @@ footer {
   color: white;
   text-decoration: none;
   padding: 6px;
-  
 }
 
 .datenschutz-impressum:hover {
@@ -274,185 +273,242 @@ li {
   margin-left: 20px;
 }
 
+.resp_menu_box {
+  background-color: #ededed;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  width: 135px;
+  height: 140px;
+
+  position: absolute;
+
+  top: 20px;
+  right: 0;
+
+  transition: all 250ms ease-in-out;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 550;
+  margin-right: 10px;
+}
+
+.resp_menu_closed {
+  transform: translateX(115%);
+}
+
+.content {
+  position: relative;
+  overflow: hidden;
+}
+
+.menu_open_button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border-radius: 8px;
+}
+
+.menu_close_button {
+  border-radius: 8px;
+  width: 135px;
+}
+
+.resp-menu-link {
+  text-decoration: none;
+  color: black;
+  padding-left: 5px;
+}
+
+.resp-menu-link:hover {
+  color: #008000;
+}
+
 @media (max-width: 1000px) {
-    .header-padding {
-        padding-right: 50px;
-
-    }
+  .header-padding {
+    padding-right: 50px;
+  }
 }
 
 @media (max-width: 680px) {
-    .menu-right {
-       display: none;
-    }
+  .menu-right {
+    display: none;
+  }
 }
 
 @media (max-width: 680px) {
-    .header-padding {
-        justify-content: center;
-    }
+  .header-padding {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 680px) {
-    .header-kaiserschmarren {
-        display: flex;
-        justify-content: center;
-    }
-    }
+  .header-kaiserschmarren {
+    display: flex;
+    justify-content: center;
+  }
+}
 
-    @media (max-width: 550px) {
-    .kaiserschmarren-img {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-}
-@media (max-width: 550px) {
-    .schwierigkeitsgrad {
-        padding-left: 20px;
-        padding-right: 20px;
-        flex-direction: column;
-        padding-top: 20px;
-        padding-bottom: 200px;
-    }
-}
-@media (max-width: 550px) {
-    .portion-group {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
+@media (min-width: 680px) {
+  .menu_open_button{
+    display: none;
+  }
 }
 
 @media (max-width: 550px) {
-    .zutaten-section {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
+  .kaiserschmarren-img {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 550px) {
+  .schwierigkeitsgrad {
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 200px;
+  }
+}
+@media (max-width: 550px) {
+  .portion-group {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 @media (max-width: 550px) {
-    .zubereitung-header {
-        display: flex;
-        justify-content: center;
-        padding: 0;
-        font-size: 25px;
-    }
+  .zutaten-section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 @media (max-width: 550px) {
-    .zubereitung {
-        padding-left: 20px;
-        padding-right: 20px;
-        flex-direction: column;
-    }
+  .zubereitung-header {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    font-size: 25px;
+  }
 }
 
 @media (max-width: 550px) {
-    .zubereitung-steps {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
+  .zubereitung {
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 550px) {
-    .ersteller-header {
-        display: flex;
-        justify-content: center;
-        padding: 0;
-    }
+  .zubereitung-steps {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 @media (max-width: 550px) {
-    .ersteller-info {
-        flex-direction: column;
-        align-items: center;
-        padding-left: 0;
-    }
+  .ersteller-header {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
 }
 
 @media (max-width: 550px) {
-    .ersteller-name {
-        margin-left: 0;
-        margin-top: 10px;
-    }
+  .ersteller-info {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+  }
 }
 
 @media (max-width: 550px) {
-    .icons {
-
-    }
+  .ersteller-name {
+    margin-left: 0;
+    margin-top: 10px;
+  }
 }
 
 @media (max-width: 400px) {
-    .header-kaiserschmarren {
-        font-size: 30px;
-    }
+  .header-kaiserschmarren {
+    font-size: 30px;
+  }
 }
 
 @media (max-width: 400px) {
-    .p-schwierigkeitsgrad {
-        font-size: 15px;
-    }
-}
-
-@media (max-width: 550px) {
-    .zutaten-header {
-        display: flex;
-        justify-content: center;
-        font-size: 25px; 
-        margin-bottom: 0;
-    }
-}
-
-@media (max-width: 550px) {
-    .ersteller-info img {
-        margin: 0;
-    }
-}
-
-@media (max-width: 550px) {
-    .footer-socials img {
-        height: 40px;
-        width: 40px;
-    }
-}
-@media (max-width: 550px) {
-    .footer-socials{
-        gap: 5px;
-    }
-}
-
-@media (max-width: 550px) {
-    footer {
-        padding-left: 25px;
-        padding-right: 25px;
-    }
-}
-
-@media (max-width: 550px) {
-    .datenschutz-impressum {
-        font-size: 15px;
-        display: flex;
-        flex-direction: column;
-        padding-left: 10px;
-    }
-}
-
-@media (max-width: 550px) {
-    li {
+  .p-schwierigkeitsgrad {
     font-size: 15px;
-    }
+  }
 }
 
 @media (max-width: 550px) {
-    .portion-group {
-        font-size: 15px;
-        justify-content: center;
-        padding-bottom: 10px;
-    }
+  .zutaten-header {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    margin-bottom: 0;
+  }
 }
 
 @media (max-width: 550px) {
-    .zubereitung-zeit-text {
-        font-size: 15px;
-    }
+  .ersteller-info img {
+    margin: 0;
+  }
+}
+
+@media (max-width: 550px) {
+  .footer-socials img {
+    height: 40px;
+    width: 40px;
+  }
+}
+@media (max-width: 550px) {
+  .footer-socials {
+    gap: 5px;
+  }
+}
+
+@media (max-width: 550px) {
+  footer {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+@media (max-width: 550px) {
+  .datenschutz-impressum {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 550px) {
+  li {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 550px) {
+  .portion-group {
+    font-size: 15px;
+    justify-content: center;
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 550px) {
+  .zubereitung-zeit-text {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px){
+  .header-padding{
+    display: block;
+    padding-left: 20px;
+  }
 }
