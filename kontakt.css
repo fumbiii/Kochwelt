@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    min-height: 100vh;
+}
+
+.content {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: minmax(0, 1fr);
+    position: relative;
+    overflow-x: hidden;
+}
+
+header {
+    height: 67px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+}
+
+.header-padding {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 136px;
+    padding-right: 136px;
+}
+
+.kochwelt-logo {
+    margin-top: 10px;
+    height: 47px;
+}
+
+.menu-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.menu {
+    width: 350px;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+}
+
+.menu-links {
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+    font-weight: 550;
+}
+
+.menu-links:hover {
+    color: #008000;
+    text-decoration-line: underline;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 10px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    align-items: center;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 150px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: #ededed;
+    padding: 14px;
+    border-radius: 12px;
+    filter: drop-shadow(0px 0px 8px rgb(93, 139, 93));
+}
+
+h3 {
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+
+.label-contact {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    margin-top: 8px;
+    padding-right: 0px;
+}
+
+label {
+    padding-right: 10px;
+}
+
+input {
+    border: 1px solid #ededed;
+}
+
+.input-contact {
+    height: 28px;
+    width: 350px;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: black;
+}
+
+textarea {
+    resize: none;
+    border-radius: 8px;
+}
+
+.button-send {
+    background-color: green;
+    color: white;
+    border: none;
+    height: 28px;
+    width: 120px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-right: 214px;
+    margin-left: 214px;
+}
+
+footer {
+    display: flex;
+    background-color: #403b3b;
+    align-items: center;
+    height: 150px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.kochwelt-weiß {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo {
+    height: 47px;
+    filter: invert(100%);
+}
+
+.datenschutz-impressum {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    gap: 16px;
+}
+
+.datenschutz-impressum:hover {
+    color: green;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 16px;
+}

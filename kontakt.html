@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="kontakt.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="content">
+        <header>
+        <div class="header-padding">
+            <a href="hauptseite-index.html">
+            <img class="kochwelt-logo" src="img/logo-zusammen.png" alt="Kochwelt-Logo">
+            </a>
+            <nav class="menu-right">
+                <div class="menu">
+                    <a class="menu-links" href="hauptseite-index.html">Start</a>
+                    <a class="menu-links" href="marcel.html">Rezept des Tages</a>
+                    <a class="menu-links" href="kontakt.html">Kontakt</a>
+                    <a class="menu-links" href="impressum.html">Impressum</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <form action="https://formspree.io/f/mnnzbgpp" method="POST">
+            <h3>Kontaktiere uns</h3>
+            <label class="label-contact">
+                Dein Name:
+                <input class="input-contact" type="text" maxlength="50" required="">
+            </label>
+            <label class="label-contact">
+                Deine E-Mail:
+                <input class="input-contact" type="email" name="email" maxlength="50" required="">
+            </label>
+            <label class="label-contact">
+                Betreff:
+                <input class="input-contact" type="text" maxlength="50" required="">
+            </label>
+            <label class="label-contact">
+                Deine Nachricht:
+                <textarea name="message" maxlength="400" rows="16" cols="70" required=""></textarea>
+            </label>
+            <button class="button-send" type="submit">Abschicken</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="kochwelt-weiß">
+                <a href="hauptseite-index.html">
+                    <img class="footer-logo" src="./img/logo_small.png">
+                </a>
+            </div>
+            <div class="datenschutz-impressum">
+                <a class="datenschutz-impressum" href="datenschutz.html">Datenschutz</a>
+                <a class="datenschutz-impressum" href="impressum.html">Impressum</a>
+            </div>
+            <div class="footer-socials">
+                <a href="https://de-de.facebook.com/" target="_blank">
+                    <img class="social-img" src="./img/facebook_logo.svg" alt="facebook-logo">
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img class="social-img" src="./img/instagram_logo.svg" alt="instagram-logo">
+                </a>
+            </div>
+        </div>
+    </footer>
+    </div>
+</body>
+</html>
