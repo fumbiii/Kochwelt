@@ -1,14 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" type="image/png" href="./img/logo_small.png" sizes="32x32">
-    <link rel="apple-touch-icon" sizes="180x180" href="/./img/logo_small.png">
+    <title>Kochwelt</title>
+    <link rel="stylesheet" href="marcel.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    
+    <header>
+        <div class="header-padding">
+            <a href="hauptseite-index.html">
+                <img class="kochwelt-logo" src="img/logo-zusammen.png" alt="Kochwelt-Logo">
+            </a>
+            <nav class="menu-right">
+                <div class="menu">
+                    <a class="menu-links" href="hauptseite-index.html">Start</a>
+                    <a class="menu-links" href="marcel.html">Rezept des Tages</a>
+                    <a class="menu-links" href="kontakt.html">Kontakt</a>
+                    <a class="menu-links" href="impressum.html">Impressum</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1>Deftiger Wildgulasch</h1>
+        <img class="Wildgulasch" src="img/Wildgulasch.jpg" alt="Wildgulasch">
+
+        <section class="difficulty">
+            <div class="icon">
+                <img class="difficulty-img" src="img/icons/clock-regular.svg" alt="clock-image">
+                <p class="difficulty-p">120 Min.</p>
+            </div>
+            <div class="icon">
+                <img class="difficulty-img" src="img/icons/brain-solid.svg" alt="brain-image">
+                <p class="difficulty-p">medium
+                </p>
+            </div>
+            <div class="icon">
+                <img class="difficulty-img" src="img/icons/calendar-alt-regular.svg" alt="calender-image">
+                <p class="difficulty-p">01.11.2025</p>
+            </div>
+        </section>
+
+        <label for="amount">Zutaten für</label>
+        <div class="input-div">
+            <input id="amount" class="input-number" type="number" min="1" max="10">
+            <input class="input-button" type="button" value="Portionen">
+        </div>
+
+        <section>
+            <ul>
+                <li>0.250 kg Wildschweingulasch</li>
+                <li>0.025 kg Bacon (gewürfelt)</li>
+                <li>0.250 kg Zwiebel(n)</li>
+                <li>0.5 Knoblauchzehe(n)</li>
+                <li>0.75 EL Tomatenmark</li>
+                <li>0.087 L Rotwein</li>
+                <li>0.125 L Wildfond oder Fleischbrühe</li>
+                <li>0.050 kg Preiselbeeren</li>
+                <li>0.037 kg Schmand</li>
+                <li>0.25 TL Rosmarin</li>
+                <li>0.25 TL Majoran</li>
+                <li>0.25 TL Kümmelpulver</li>
+                <li>0.38 TL Thymian</li>
+                <li>0.38 TL Paprikapulver (Edelsüß)</li>
+                <li>0.38 TL Paprikapulver (Rosenscharf)</li>
+                <li>Salz, Pfeffer (Schwarz)</li>
+            </ul>
+        </section>
+
+        <h2>Zubereitung</h2>
+        <div class="Zubereitung">
+            <div class="icon">
+                <img class="difficulty-img" src="img/icons/clock-regular.svg" alt="clock-image">
+                <p class="difficulty-p">Vorbereitungzeit 30 Min.</p>
+            </div>
+            <div class="icon">
+                <img class="difficulty-img" src="img/icons/clock-regular.svg" alt="clock-image">
+                <p class="difficulty-p">Gesamtzeit ca. 120 Min.</p>
+            </div>
+        </div>
+        <ol>
+            <li>
+                <span class="step">1.</span>
+                <p>Den Backofen auf 200°C Ober-/Unterhitze vorheizen.<br>Das Fleisch gründlich mit den Gewürzen vermischen.</p>
+            </li>
+            <li>
+                <span class="step">2.</span>
+                <p>Öl in einen Bräter auf der Herdplatte erhitzen.<br> Bacon, Zwiebeln, Knoblauchwürfelchen und Tomatenmark in das heiße Öl geben und anrösten.<br> Nun das gewürzte Wildschweinfleisch hinzugeben und unter regelmäßigen Rühren gut anbraten.<br>                    Danach mit Wein und Wildfond ablöschen, aufkochen lassen und alles sehr gut miteinander verrühren.</p>
+            </li>
+            <li>
+                <span class="step">3.</span>
+                <p>Zudecken und ab damit in den vorgeheizten Backofen.<br> Der Bräter sollte ungefähr in der Mitte des Backofens stehen.<br> Erst einmal 45 Minuten schmoren, dann die Preiselbeeren einrühren und weitere 45 Minuten zugedeckt schmoren.</p>
+            </li>
+            <li>
+                <span class="step">4.</span>
+                <p>Herausnehmen, auf den Herd stellen, den Schmand einrühren, mit Salz und Pfeffer abschmecken und nochmals aufkochen lassen.</p>
+            </li>
+            <li>
+                <span class="step">5.</span>
+                <p>Variante: nach insgesamt 80 Minuten Schmorzeit 250g geputzte Pilze zufügen und noch 10 Minuten mitschmoren lassen.</p>
+            </li>
+            <li>
+                <span class="step">6.</span>
+                <p>Hierzu passen Semmelknödel, Brezenknödel und Kartoffeln.<br> Wahlweise auch verschiedene Salate.</p>
+            </li>
+        </ol>
+
+        <h4>Rezept erstellt von</h4>
+        <div class="creator">
+            <img class="img-marcel" src="img/Marcel-Kochwelt.jpg" alt="Marcel">
+            <span class="marcel-txt">Marcel</span>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="kochwelt-weiß">
+                <a href="hauptseite-index.html">
+                    <img class="footer-logo" src="./img/logo_small.png" alt="logo_small.png">
+                </a>
+            </div>
+            <div class="datenschutz-impressum">
+                <a class="datenschutz-impressum" href="datenschutz.html">Datenschutz</a>
+                <a class="datenschutz-impressum" href="impressum.html">Impressum</a>
+            </div>
+            <div class="footer-socials">
+                <a href="https://de-de.facebook.com/">
+                    <img class="social-img" src="./img/facebook_logo.svg" alt="facebook-logo">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img class="social-img" src="./img/instagram_logo.svg" alt="instagram-logo">
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
