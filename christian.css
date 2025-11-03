@@ -292,12 +292,10 @@ li {
   font-size: 15px;
   font-weight: 550;
   margin-right: 10px;
-  z-index: 1;
 }
 
 .resp_menu_closed {
   transform: translateX(115%);
-  z-index: 1;
 }
 
 .content {
