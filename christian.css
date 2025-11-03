@@ -474,14 +474,14 @@ li {
 }
 @media (max-width: 550px) {
   .footer-socials {
-    gap: 5px;
+    gap: 2px;
   }
 }
 
 @media (max-width: 550px) {
   footer {
     padding-left: 25px;
-    padding-right: 25px;
+    padding-right: 20px;
   }
 }
 

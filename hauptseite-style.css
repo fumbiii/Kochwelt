@@ -202,3 +202,40 @@ p  {
   height: 64px;
   filter: invert(100%);
 }
+
+
+@media (max-width: 800px) {
+    .lust-auf-neues-rezepte{
+        flex-direction: column;
+        gap: 35px;
+    }
+}
+
+@media (max-width: 550px) {
+  .footer-socials img {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+@media (max-width: 550px) {
+  .footer-socials {
+    gap: 2px;
+  }
+}
+
+@media (max-width: 550px) {
+  footer {
+    padding-left: 25px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 550px) {
+  .datenschutz-impressum {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+  }
+}
