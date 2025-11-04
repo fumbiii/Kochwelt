@@ -251,11 +251,6 @@ footer {
     margin: 0 auto;
 }
 
-.kochwelt-weiß {
-    display: flex;
-    align-items: center;
-}
-
 .footer-logo {
     height: 47px;
     filter: invert(100%);
@@ -275,4 +270,8 @@ footer {
 .footer-socials {
     display: flex;
     gap: 16px;
+}
+
+.social-img {
+    height: 47px;
 }
