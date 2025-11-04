@@ -99,6 +99,16 @@ h1 {
     align-items: center;
 }
 
+button {
+    background-color: green;
+    color: white;
+    border: none;
+    height: 30px;
+    width: 70px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
 .input-button {
     color: white;
     background-color: #008000;
@@ -238,44 +248,48 @@ footer {
 .content {
     position: relative;
     overflow: hidden;
-    height: 120px;
+    height: 160px;
 }
 
 .resp_menu_box {
     background-color: darkseagreen;
     display: flex;
     flex-direction: column;
-    width: 80px;
-    height: 120px;
+    width: 130px;
+    height: 140px;
     border-radius: 8px;
     position: absolute;
-    top: 0;
+    top: 20px;
     right: 0;
     transition: all 250ms ease-in-out;
+    font-size: 15px;
+    font-weight: 550;
 }
 
 .resp_menu_closed {
-    transform: translateX(100%);
+    transform: translateX(115%);
 }
 
-.menu_button {
+.menu_open_button {
+    background-color: #008000;
     position: absolute;
-    top: 30px;
-    right: 30px;
+    top: 20px;
+    right: 20px;
     border-radius: 8px;
 }
 
 .menu_close_button {
-    width: 120px;
+    width: 130px;
     border-radius: 8px;
 }
 
-.resp_menu_link {
-    color: #403b3b;
+.resp-menu-link {
     text-decoration: none;
+    color: #403b3b;
+    padding-left: 5px;
 }
 
-.resp_menu_link:hover {
+.resp-menu-link:hover {
     color: #008000;
 }
 
@@ -291,7 +305,8 @@ footer {
         display: none;
     }
     .header-padding {
-        justify-content: center;
+        display: block;
+        padding-left: 20px;
     }
     h1 {
         display: flex;
@@ -319,6 +334,13 @@ footer {
     }
 }
 
+@media (max-width: 550px) {
+    .header-padding {
+        display: block;
+        padding-left: 20px;
+    }
+}
+
 @media (max-width: 430px) {
     h1 {
         font-size: 24px;
@@ -333,5 +355,14 @@ footer {
     }
     .input-number {
         width: 120px;
+    }
+}
+
+@media (min-width: 680px) {
+    .menu_open_button {
+        display: none;
+    }
+    .resp_menu_box {
+        display: none;
     }
 }
