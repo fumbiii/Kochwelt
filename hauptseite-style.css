@@ -9,7 +9,7 @@ main {
 }
 
 body {
-    display:flex;
+    display: flex;
     flex-direction: column;
 }
 
@@ -72,7 +72,6 @@ header {
 .tagesrezept-img {
     height: 200px;
     border-radius: 8px;
-
 }
 
 .tagesrezept-text {
@@ -104,25 +103,25 @@ header {
 }
 
 footer {
-   display: flex;
-  background-color: #403b3b;
-  align-items: center;
-  height: 150px;
-  width: 100%;
-  left: 0;
-  bottom: 0;
-  padding-left: 50px;
-  padding-right: 50px;
+    display: flex;
+    background-color: #403b3b;
+    align-items: center;
+    height: 150px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .footer-content {
- display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100px;
-  width: 100%;
-  max-width: 1920px;
-  margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 .footer-content img {
@@ -131,7 +130,6 @@ footer {
 
 .lust-auf-neues-section {
     background-color: #EFEFEF;
-
 }
 
 .lust-auf-neues-header {
@@ -165,7 +163,7 @@ h2 {
     font-size: 20px;
 }
 
-p  { 
+p {
     margin-top: 5px;
     text-decoration: none;
 }
@@ -182,60 +180,91 @@ p  {
     text-underline-offset: 10px;
 }
 
+.was-ist-besser {
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 48px;
+    margin-bottom: 56px;
+}
+
+.was-ist-besser-h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-bottom: 32px;
+}
+
+.was-ist-besser-pimg {
+    display: flex;
+    justify-content: space-between;
+}
+
+.was-ist-besser-p {
+    font-size: 14px;
+    padding-right: 30px;
+}
+
+.was-ist-besser-img {
+    height: 150px;
+    width: 150px;
+    border-radius: 8px;
+}
+
 .footer-socials {
-   display: flex;
-  justify-content: space-evenly;
-  width: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 150px;
 }
 
 .datenschutz-impressum {
-  color: white;
-  text-decoration: none;
-  padding: 6px;
+    color: white;
+    text-decoration: none;
+    padding: 6px;
 }
 
 .datenschutz-impressum:hover {
-  color: green;
+    color: green;
 }
 
 .kochwelt-weiß {
-  height: 64px;
-  filter: invert(100%);
+    height: 64px;
+    filter: invert(100%);
 }
 
-
 @media (max-width: 800px) {
-    .lust-auf-neues-rezepte{
+    .lust-auf-neues-rezepte {
         flex-direction: column;
         gap: 35px;
     }
 }
 
 @media (max-width: 550px) {
-  .footer-socials img {
-    height: 40px;
-    width: 40px;
-  }
+    .footer-socials img {
+        height: 40px;
+        width: 40px;
+    }
 }
 
 @media (max-width: 550px) {
-  .footer-socials {
-    gap: 2px;
-  }
+    .footer-socials {
+        gap: 2px;
+    }
 }
 
 @media (max-width: 550px) {
-  footer {
-    padding-left: 25px;
-    padding-right: 20px;
-  }
+    footer {
+        padding-left: 25px;
+        padding-right: 20px;
+    }
 }
 
 @media (max-width: 550px) {
-  .datenschutz-impressum {
-    font-size: 15px;
-    display: flex;
-    flex-direction: column;
-    padding-left: 10px;
-  }
+    .datenschutz-impressum {
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+    }
 }
