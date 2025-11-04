@@ -47,11 +47,15 @@ header {
     text-underline-offset: 10px;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 main {
     max-width: 1920px;
     align-items: center;
     padding: 50px;
-    margin: 0;
+    margin: 0 auto;
 }
 
 h1 {
@@ -229,4 +233,105 @@ footer {
 .footer-socials {
     display: flex;
     gap: 16px;
+}
+
+.content {
+    position: relative;
+    overflow: hidden;
+    height: 120px;
+}
+
+.resp_menu_box {
+    background-color: darkseagreen;
+    display: flex;
+    flex-direction: column;
+    width: 80px;
+    height: 120px;
+    border-radius: 8px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all 250ms ease-in-out;
+}
+
+.resp_menu_closed {
+    transform: translateX(100%);
+}
+
+.menu_button {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    border-radius: 8px;
+}
+
+.menu_close_button {
+    width: 120px;
+    border-radius: 8px;
+}
+
+.resp_menu_link {
+    color: #403b3b;
+    text-decoration: none;
+}
+
+.resp_menu_link:hover {
+    color: #008000;
+}
+
+@media (max-width: 1000px) {
+    .header-padding {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+}
+
+@media (max-width: 680px) {
+    .menu-right {
+        display: none;
+    }
+    .header-padding {
+        justify-content: center;
+    }
+    h1 {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 550px) {
+    .footer-socials img {
+        height: 40px;
+        width: 40px;
+    }
+    .footer-socials {
+        gap: 2px;
+    }
+    footer {
+        padding-left: 25px;
+        padding-right: 20px;
+    }
+    .datenschutz-impressum {
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+    }
+}
+
+@media (max-width: 430px) {
+    h1 {
+        font-size: 24px;
+    }
+    .icon {
+        border-radius: 8px;
+        margin: 5px;
+        gap: 6px;
+        padding-right: 10px;
+        padding-left: 10px;
+        font-size: 10px;
+    }
+    .input-number {
+        width: 120px;
+    }
 }
