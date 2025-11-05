@@ -61,7 +61,7 @@
             </div>
             <div class="icon">
                 <img class="difficulty-img" src="img/icons/brain-solid.svg" alt="brain-image">
-                <p class="difficulty-p">medium
+                <p class="difficulty-p">mittel
                 </p>
             </div>
             <div class="icon">
@@ -72,13 +72,15 @@
         <form>
             <label for="amount">Zutaten für</label>
             <div class="input-div">
-                <input id="amount" class="input-number" type="number" min="1" max="10">
-                <input class="input-button" type="button" value="Portionen">
+                <input id="amount" class="input-number" type="number" min="1" max="10" value="1">
+                <button class="input-button" type="submit" onklick="calculate_Wildgulasch()">
+                    Portionen
+                </button>
             </div>
         </form>
 
         <section>
-            <ul>
+            <ul id="zutatenlisteWildgulasch">
                 <li>0.250 kg Wildschweingulasch</li>
                 <li>0.025 kg Bacon (gewürfelt)</li>
                 <li>0.250 kg Zwiebel(n)</li>
