@@ -237,7 +237,7 @@ li {
 }
 
 .zubereitung-zeit img {
-  height: 20px;
+  height: 25px;
 }
 
 .zubereitung-steps {
@@ -340,7 +340,7 @@ li {
 
 @media (max-width: 680px) {
   .header-padding {
-    justify-content: center;
+    justify-content: left;
   }
 }
 
@@ -518,5 +518,11 @@ li {
   .header-padding{
     display: block;
     padding-left: 20px;
+  }
+}
+
+@media (max-width: 550px) {
+  .icons img {
+    height: 20px;
   }
 }

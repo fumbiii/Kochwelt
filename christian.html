@@ -18,11 +18,14 @@
       function toggleRespMenu(){
         document.getElementById("resp_menu").classList.toggle('resp_menu_closed')
     }
+
+    
     </script>
+    
     
   </head>
   <body>
-
+    
     <div class="content">
     <header>
       <div class="header-padding">
@@ -95,7 +98,7 @@
         <label for="input-portion">Zutaten für</label>
         <div class="input-button">
           <input id="input-portion" type="number" max="8" min="1" value="1" />
-          <button type="submit" onclick="calculateRecipe_Kaiserschmarren()">
+          <button id="ingredients-button" type="submit" onclick="calculate_Kaiserschmarren()">
             Portionen
           </button>
         </div>
@@ -104,15 +107,15 @@
 
     <section class="zutaten-section">
       <h2 class="zutaten-header">Zutaten</h2>
-      <ul class="zutaten-liste">
-        <li>250 ml Milch</li>
-        <li>150 g Mehl</li>
-        <li>2 EL Zucker</li>
-        <li>1 Pck. Vanillezucker</li>
-        <li>3 Eier</li>
-        <li>Butter zum Ausbacken</li>
-        <li>Eine Prise Salz</li>
-        <li>Puderzucker zum Bestreuen</li>
+        <ul id="zutatenListKaiserschmarren" class="zutaten-liste">
+        <li>250.00 ml Milch</li>
+        <li>150.00 g Mehl</li>
+        <li>2.00 EL Zucker</li>
+        <li>1.00 Pck. Vanillezucker</li>
+        <li>3.00 Eier</li>
+        <li>5.00 g Butter zum Ausbacken</li>
+        <li>2.00 g Salz</li>
+        <li>1.00 Handvoll Puderzucker zum Bestreuen</li>
         <li>Apfelmus oder Johannisbeeren zum Servieren</li>
       </ul>
     </section>
@@ -137,7 +140,7 @@
         <p class="zubereitung-zeit-text">Gesamtzeit ca. 30 Minuten</p>
       </div>
       </div>
-      <ol class="zubereitung-steps">
+  <ol class="zubereitung-steps">
         <li>
           Milch, Mehl, Zucker und Vanillezucker glatt rühren und etwas quellen
           lassen
@@ -177,11 +180,12 @@
     </main>
     <footer>
       <div class="footer-content">
+        <a href="hauptseite-index.html">
         <img
           class="kochwelt-weiß"
           src="img/logo_small.png"
           alt="Kochwelt-Logo weiß"
-        />
+        /></a>
          <div class="datenschutz-impressum">
                 <a class="datenschutz-impressum" href="datenschutz.html">Datenschutz</a>
                 <a class="datenschutz-impressum" href="impressum.html">Impressum</a>
@@ -204,5 +208,6 @@
         </div>
       </div>
     </footer>
+    <script src="christian.js"></script>
   </body>
 </html>
