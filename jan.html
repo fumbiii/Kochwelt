@@ -7,6 +7,7 @@
     <title>Möhren Ingwer Suppe</title>
 
     <link rel="stylesheet" href="jan.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,6 +16,12 @@
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" type="image/png" href="./img/logo_small.png" sizes="32x32">
     <link rel="apple-touch-icon" sizes="180x180" href="/./img/logo_small.png">
+
+    <script>
+      function toggleRespMenu(){
+        document.getElementById("resp_menu").classList.toggle('resp_menu_closed')
+    }
+    </script>
 </head>
 
 <body>
@@ -33,6 +40,15 @@
             </nav>
         </div>
     </header>
+
+    <button class="menu_open_button" onclick="toggleRespMenu()">Menü öffnen</button>
+        <div id="resp_menu" class="resp_menu_box resp_menu_closed">
+          <button class="menu_close_button" onclick="toggleRespMenu()">Menü schließen</button>
+          <a class="resp-menu-link" href="./hauptseite-index.html">Start</a>
+          <a class="resp-menu-link" href="./marcel.html">Rezept des Tages</a>
+          <a class="resp-menu-link" href="./kontakt.html">Kontakt</a>
+          <a class="resp-menu-link" href="./impressum.html">Impressum</a>
+        </div>
 
     <main>
         <h1 class="header-ingwersuppe">Möhren Ingwer Suppe</h1>
@@ -119,22 +135,12 @@
 
         <section>
             <h2>Nährwertangaben pro Portion</h2>
-            <table class="nährwerte-angaben">
-            <tbody>
-                <tr>
-                    <th>Energie</th>
-                    <th>Eiweiß</th>
-                    <th>Fett</th>
-                    <th>Kohlenhydrate</th>
-                </tr>
-                <tr>
-                    <td>306 kcal</td>
-                    <td>3.47 g</td>
-                    <td>26.42 g</td>
-                    <td>14.45 g</td>
-                </tr>
-            </tbody>
-            </table>
+            <ul>
+                <li>Energie: 306 kcal</li>
+                <li>Eiweiß: 3.47 g</li>
+                <li>Fett: 26.42 g</li>
+                <li>Kohlenhydrate: 14.45 g</li>
+            </ul>
         </section>
 
         <section>
