@@ -11,8 +11,8 @@ header {
 .header-padding {
   display: flex;
   justify-content: space-between;
-  padding-left: 136px;
   padding-right: 136px;
+  padding-left: 136px;
 }
 
 .kochwelt-logo {
@@ -49,6 +49,12 @@ header {
 
 * {
   box-sizing: border-box;
+}
+main {
+  align-items: center;
+  max-width: 1920px;
+    margin: 0 auto;
+    padding: 50px;
 }
 footer {
   display: flex;
@@ -99,17 +105,15 @@ footer {
 
 .header-kaiserschmarren {
   font-size: 36px;
-  padding-left: 136px;
   padding-right: 136px;
-  margin-top: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .kaiserschmarren-img {
   display: flex;
   justify-content: center;
   padding-top: 24px;
-  padding-left: 136px;
-  padding-right: 136px;
 }
 
 .kaiserschmarren-img img {
@@ -124,7 +128,6 @@ footer {
   gap: 16px;
   align-items: center;
   height: 40px;
-  padding-left: 136px;
   padding-top: 50px;
   padding-bottom: 40px;
   cursor: default;
@@ -148,7 +151,6 @@ footer {
 .portion-group {
   display: flex;
   align-items: center;
-  padding-left: 136px;
   padding-top: 20px;
   padding-bottom: 40px;
 }
@@ -189,7 +191,6 @@ button {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  padding-left: 136px;
 }
 
 ul {
@@ -214,7 +215,6 @@ li {
 
 .zubereitung {
   display: flex;
-  padding-left: 136px;
   padding-right: 136px;
   gap: 16px;
   cursor: default;
@@ -222,7 +222,6 @@ li {
 
 .zubereitung-header {
   font-size: 24px;
-  padding-left: 136px;
 }
 
 .zubereitung-zeit {
@@ -242,7 +241,6 @@ li {
 
 .zubereitung-steps {
   padding-top: 30px;
-  padding-left: 136px;
   padding-right: 136px;
   gap: 22px;
 }
@@ -250,15 +248,9 @@ li {
 .ersteller-section {
   padding-top: 20px;
 }
-
-.ersteller-header {
-  padding-left: 136px;
-}
-
 .ersteller-info {
   display: flex;
   align-items: center;
-  padding-left: 136px;
   padding-bottom: 50px;
 }
 
@@ -301,7 +293,7 @@ li {
 .content {
   position: relative;
   overflow: hidden;
-  height: 165px;
+  height: 69px;
 }
 
 .menu_open_button {
