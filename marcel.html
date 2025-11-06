@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kochwelt</title>
+    <title>Deftiger Wildgulasch</title>
     <link rel="stylesheet" href="marcel.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -69,27 +69,29 @@
                 <p class="difficulty-p">01.11.2025</p>
             </div>
         </section>
-        <form>
-            <label for="amount">Zutaten für</label>
-            <div class="input-div">
-                <input id="amount" class="input-number" type="number" min="1" max="10" value="1">
-                <button type="submit" onklick="calculate_Wildgulasch()">
-                    Portionen
+
+        <div class="portion-group">
+            <label for="input-portion">Zutaten für</label>
+            <div class="input-button">
+                <input id="input-portion" type="number" max="10" min="1" value="1">
+                <button type="submit" onclick="calculate_Wildgulasch()">
+              Portionen
                 </button>
             </div>
-        </form>
+        </div>
+
 
         <section>
-            <ul id="zutatenlisteWildgulasch">
-                <li>0.250 kg Wildschweingulasch</li>
-                <li>0.025 kg Bacon (gewürfelt)</li>
-                <li>0.250 kg Zwiebel(n)</li>
-                <li>0.5 Knoblauchzehe(n)</li>
+            <ul id="zutatenlistWildgulasch">
+                <li>250 g Wildschweingulasch</li>
+                <li>25 g Bacon (gewürfelt)</li>
+                <li>250 g Zwiebel(n)</li>
+                <li>0.5 Stück Knoblauchzehe(n)</li>
                 <li>0.75 EL Tomatenmark</li>
-                <li>0.087 L Rotwein</li>
-                <li>0.125 L Wildfond oder Fleischbrühe</li>
-                <li>0.050 kg Preiselbeeren</li>
-                <li>0.037 kg Schmand</li>
+                <li>87 ml Rotwein</li>
+                <li>125 ml Wildfond oder Fleischbrühe</li>
+                <li>50 g Preiselbeeren</li>
+                <li>37 g Schmand</li>
                 <li>0.25 TL Rosmarin</li>
                 <li>0.25 TL Majoran</li>
                 <li>0.25 TL Kümmelpulver</li>
