@@ -68,6 +68,12 @@ h2 {
     margin-right: 10px;
 }
 
+.content {
+  position: relative;
+  overflow: hidden;
+  height: 165px;
+}
+
 .resp_menu_closed {
     transform: translateX(115%);
 }
@@ -198,6 +204,10 @@ ul li:nth-child(odd) {
     height: 40px;
 }
 
+.semi-bold {
+    font-weight: 600;
+}
+
 h4 {
     padding-top: 24px;
 }
@@ -289,7 +299,7 @@ footer {
 
 @media (min-width: 320px) and (max-width: 768px) {
     h1 {
-        font-size: 20px;
+        font-size: 26px;
         display: flex;
         justify-content: center;
     }
