@@ -33,7 +33,11 @@ function calculate_Wildgulasch() {
     // 4. Neue Mengen berechnen und HTML-Einträge hinzufügen
     for (let i = 0; i < ammountWildgulasch.length; i++) {
         // Multipliziere die Basis-Menge mit der gewünschten Portionsanzahl
+<<<<<<< HEAD
         let newAmmount = (ammountWildgulasch[i] * portions);
+=======
+        let newAmmount = ammountWildgulasch[i] * portions;
+>>>>>>> cb2c9b7d9339ff47ea2c52764dd76bd1f428e3f4
         let formattedAmmount;
 
         // Überprüfung, ob der aktuelle Index gerundet werden soll
