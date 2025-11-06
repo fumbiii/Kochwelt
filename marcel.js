@@ -7,7 +7,7 @@ let zutatenWildgulasch = ['g Wildgulasch', 'g Bacon', 'g Zwiebeln', 'Stück Knob
 function calculate_Wildgulasch() {
     // 1. Wert der Portionen auslesen
     // parseFloat stellt sicher, dass wir mit einer Zahl rechnen können
-    let portions = parseFloat(document.getElementById('input-potion').value);
+    let portions = parseFloat(document.getElementById('input-portion').value);
 
     // VALIDIERUNG: Prüfen, ob der Wert negativ oder Null ist (oder NaN)
     if (portions < 1 || isNaN(portions)) {
@@ -33,7 +33,7 @@ function calculate_Wildgulasch() {
     // 4. Neue Mengen berechnen und HTML-Einträge hinzufügen
     for (let i = 0; i < ammountWildgulasch.length; i++) {
         // Multipliziere die Basis-Menge mit der gewünschten Portionsanzahl
-        let newAmmount = (ammountWildgulasch[i] * portions).toFixed(2);
+        let newAmmount = ammountWildgulasch[i] * portions;
         let formattedAmmount;
 
         // Überprüfung, ob der aktuelle Index gerundet werden soll
