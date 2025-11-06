@@ -108,8 +108,6 @@ footer {
     align-items: center;
     height: 150px;
     width: 100%;
-    left: 0;
-    bottom: 0;
     padding-left: 50px;
     padding-right: 50px;
 }
@@ -237,6 +235,67 @@ p {
     filter: invert(100%);
 }
 
+button {
+  background-color: green;
+  color: white;
+  border: none;
+  height: 30px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  cursor: pointer;
+}
+.resp_menu_box {
+  background-color: #ededed;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  width: 135px;
+  height: 140px;
+
+  position: absolute;
+
+  top: 20px;
+  right: 0;
+
+  transition: all 125ms ease-in-out;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 550;
+  margin-right: 10px;
+}
+
+.resp_menu_closed {
+  transform: translateX(115%);
+}
+
+.content {
+  position: relative;
+  overflow: hidden;
+  height: 165px;
+}
+
+.menu_open_button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border-radius: 8px;
+}
+
+.menu_close_button {
+  border-radius: 8px;
+  width: 135px;
+}
+
+.resp-menu-link {
+  text-decoration: none;
+  color: black;
+  padding-left: 5px;
+}
+
+.resp-menu-link:hover {
+  color: #008000;
+}
+
 @media (max-width: 800px) {
     .lust-auf-neues-rezepte {
         flex-direction: column;
@@ -253,7 +312,7 @@ p {
 
 @media (max-width: 550px) {
     .footer-socials {
-        gap: 2px;
+        gap: 7px;
     }
 }
 
@@ -272,3 +331,41 @@ p {
         padding-left: 10px;
     }
 }
+
+
+@media (min-width: 681px) {
+  .menu_open_button{
+    display: none;
+  }
+}
+
+@media (min-width: 680px) {
+  .resp_menu_box {
+    display: none;
+  }
+}
+
+@media (max-width: 680px) {
+  .menu-right {
+    display: none;
+    }
+}
+@media (max-width: 1000px) {
+  .header-padding {
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 680px) {
+  .header-padding {
+    justify-content: left;
+  }
+}
+
+@media (max-width: 480px){
+  .header-padding{
+    display: block;
+    padding-left: 20px;
+  }
+}
+

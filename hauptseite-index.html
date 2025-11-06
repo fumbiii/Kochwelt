@@ -13,9 +13,15 @@
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" type="image/png" href="./img/logo_small.png" sizes="32x32">
     <link rel="apple-touch-icon" sizes="180x180" href="/./img/logo_small.png">
+    <script>
+      function toggleRespMenu(){
+        document.getElementById("resp_menu").classList.toggle('resp_menu_closed')
+    }
+    </script>
 </head>
 
 <body>
+     <div class="content">
     <header>
         <div class="header-padding">
             <a href="hauptseite-index.html">
@@ -31,6 +37,15 @@
                 </nav>
             </div>
     </header>
+    <button class="menu_open_button" onclick="toggleRespMenu()">Menü öffnen</button>
+        <div id="resp_menu" class="resp_menu_box resp_menu_closed">
+          <button class="menu_close_button" onclick="toggleRespMenu()">Menü schließen</button>
+          <a class="resp-menu-link" href="">Start</a>
+          <a class="resp-menu-link" href="">Rezept des Tages</a>
+          <a class="resp-menu-link" href="">Kontakt</a>
+          <a class="resp-menu-link" href="">Impressum</a>
+        </div>
+    </div>
 
     <main>
 

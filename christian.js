@@ -7,7 +7,19 @@ let zutatenSchmarren = ['ml Milch', 'g Mehl', 'EL Zucker', 'Pck. Vanillezucker',
 function calculate_Kaiserschmarren() {
     // 1. Wert der Portion auslesen
     // parseFloat stellt sicher, dass wir mit einer Zahl rechnen können
-    let portions = parseFloat(document.getElementById('input-portion').value);
+    const inputEl = document.getElementById('input-portion');
+    // read min/max from the input element (fallback to sensible defaults)
+    const minPortions = parseFloat(inputEl.min) || 1;
+    const maxPortions = isNaN(parseFloat(inputEl.max)) ? Infinity : parseFloat(inputEl.max);
+    let portions = parseFloat(inputEl.value);
+
+    // validate and clamp the value so it never goes below min or above max
+    if (isNaN(portions)) {
+        portions = minPortions;
+    }
+    portions = Math.max(minPortions, Math.min(maxPortions, portions));
+    // write the (possibly clamped) value back to the input so the UI matches
+    inputEl.value = portions;
 
     // 2. Referenz auf die Zutatenliste holen
     let KaiserschmarrenReference = document.getElementById('zutatenListKaiserschmarren');

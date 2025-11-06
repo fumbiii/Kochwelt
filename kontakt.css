@@ -2,10 +2,11 @@ body {
     margin: 0;
     font-family: "Raleway", sans-serif;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .content {
-    min-height: 100vh;
     display: grid;
     grid-template-rows: auto 1fr auto;
     grid-template-columns: minmax(0, 1fr);
@@ -66,6 +67,7 @@ main {
     max-width: 1920px;
     margin: 0 auto;
     padding: 150px;
+    flex: 1;
 }
 
 form {
@@ -110,6 +112,15 @@ textarea {
     resize: none;
     border-radius: 8px;
 }
+button {
+  background-color: green;
+  color: white;
+  border: none;
+  height: 30px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  cursor: pointer;
+}
 
 .button-send {
     background-color: green;
@@ -131,8 +142,6 @@ footer {
     align-items: center;
     height: 150px;
     width: 100%;
-    left: 0;
-    bottom: 0;
     padding-left: 50px;
     padding-right: 50px;
 }
@@ -171,4 +180,180 @@ footer {
 .footer-socials {
     display: flex;
     gap: 16px;
+}
+.resp_menu_box {
+  background-color: #ededed;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  width: 135px;
+  height: 140px;
+
+  position: absolute;
+
+  top: 20px;
+  right: 0;
+
+  transition: all 125ms ease-in-out;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 550;
+  margin-right: 10px;
+}
+
+.resp_menu_closed {
+  transform: translateX(115%);
+}
+
+.content {
+  position: relative;
+  overflow: hidden;
+  height: 69px;
+}
+
+.menu_open_button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border-radius: 8px;
+}
+
+.menu_close_button {
+  border-radius: 8px;
+  width: 135px;
+}
+
+.resp-menu-link {
+  text-decoration: none;
+  color: black;
+  padding-left: 5px;
+}
+
+.resp-menu-link:hover {
+  color: #008000;
+}
+
+@media (max-width: 800px){
+    form {
+        width: 400px;
+    }
+    .label-contact{
+        width: 350px;
+    }
+    .button-send {
+        margin-left: 115px;
+        margin-right: 115px;
+    }
+}
+    
+@media (max-width: 600px) {
+    form {
+        width: 350px;
+    }
+    .label-contact{
+        width: 300px;
+    }
+    .input-contact {
+        width: 300px;
+    }
+    .button-send {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+@media (max-width: 550px) {
+    main {
+        padding-left: 85px;
+    }
+}
+
+@media (max-width: 500px) {
+    main {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media (max-width: 450px) {
+    main {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    form {
+        width: 282px;
+    }
+    .label-contact {
+        width: 250px;
+    }
+    .input-contact {
+        width: 250px;
+    }
+    .button-send {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+}
+
+@media (max-width: 550px) {
+    .footer-socials img {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+@media (max-width: 550px) {
+    .footer-socials {
+        gap: 7px;
+    }
+}
+
+@media (max-width: 550px) {
+    footer {
+        padding-left: 25px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 550px) {
+    .datenschutz-impressum {
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+    }
+}
+
+@media (min-width: 681px) {
+  .menu_open_button{
+    display: none;
+  }
+}
+
+@media (max-width: 680px) {
+  .menu-right {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .header-padding {
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 680px) {
+  .header-padding {
+    justify-content: left;
+  }
+}
+
+@media (max-width: 480px){
+  .header-padding{
+    display: block;
+    padding-left: 20px;
+  }
 }
