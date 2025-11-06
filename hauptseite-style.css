@@ -307,10 +307,30 @@ button {
         text-align: center;
         padding-top: 24px;
         margin-top: 0px;
+        padding-left: 56px;
+        padding-right: 56px;
     }
-}
-
-@media (max-width: 440px) {
+    .tagesrezept-img {
+        height: 160px;
+    }
+    .tagesrezept-header {
+        padding-top: 24px;
+    }
+    .tagesrezept-beschreibung {
+        text-align: justify;
+    }
+    .lust-auf-neues-rezepte {
+        padding-bottom: 56px;
+    }
+    .was-ist-besser {
+        padding-left: 56px;
+        padding-right: 56px;
+    }
+    .was-ist-besser-p {
+        text-align: justify;
+        padding-right: 0px;
+        margin-bottom: 24px;
+    }
     .was-ist-besser-pimg {
         flex-direction: column;
         align-items: center;
