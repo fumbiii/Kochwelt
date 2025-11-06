@@ -105,7 +105,6 @@ footer {
 
 .header-kaiserschmarren {
   font-size: 36px;
-  padding-right: 136px;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -215,7 +214,6 @@ li {
 
 .zubereitung {
   display: flex;
-  padding-right: 136px;
   gap: 16px;
   cursor: default;
 }
@@ -241,7 +239,6 @@ li {
 
 .zubereitung-steps {
   padding-top: 30px;
-  padding-right: 136px;
   gap: 22px;
 }
 
@@ -293,7 +290,7 @@ li {
 .content {
   position: relative;
   overflow: hidden;
-  height: 69px;
+  height: 165px;
 }
 
 .menu_open_button {
@@ -360,75 +357,100 @@ li {
     padding-left: 20px;
     padding-right: 20px;
   }
-}
-@media (max-width: 550px) {
-  .schwierigkeitsgrad {
+  .icons img {
+    height: 20px;
+  }
+  .zubereitung-zeit-text {
+    font-size: 15px;
+  }
+  .portion-group {
+    font-size: 15px;
+    justify-content: center;
+    padding-bottom: 10px;
+  }
+  li {
+    font-size: 15px;
+  }
+  .datenschutz-impressum {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+  }
+  footer {
+    padding-left: 25px;
+    padding-right: 20px;
+  }
+  .zutaten-header {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    margin-bottom: 0;
+  }
+  .footer-socials {
+    gap: 7px;
+  }
+  .footer-socials img {
+    height: 40px;
+    width: 40px;
+  }
+  .ersteller-info img {
+    margin: 0;
+  }
+  .p-schwierigkeitsgrad {
+    font-size: 15px;
+  }
+  .ersteller-name {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .ersteller-info {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+  }
+  .ersteller-header {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  .zubereitung-steps {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .zubereitung {
     padding-left: 20px;
     padding-right: 20px;
     flex-direction: column;
-    padding-top: 20px;
-    padding-bottom: 200px;
   }
-}
-@media (max-width: 550px) {
-  .portion-group {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-
-@media (max-width: 550px) {
-  .zutaten-section {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-
-@media (max-width: 550px) {
   .zubereitung-header {
     display: flex;
     justify-content: center;
     padding: 0;
     font-size: 25px;
   }
-}
-
-@media (max-width: 550px) {
-  .zubereitung {
-    padding-left: 20px;
-    padding-right: 20px;
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 550px) {
-  .zubereitung-steps {
+  .zutaten-section {
     padding-left: 20px;
     padding-right: 20px;
   }
-}
-
-@media (max-width: 550px) {
-  .ersteller-header {
-    display: flex;
-    justify-content: center;
-    padding: 0;
+  .portion-group {
+    padding-left: 20px;
+    padding-right: 20px;
   }
-}
-
-@media (max-width: 550px) {
-  .ersteller-info {
+  .portion-group {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .schwierigkeitsgrad {
+    padding-left: 20px;
+    padding-right: 20px;
     flex-direction: column;
-    align-items: center;
-    padding-left: 0;
-  }
+    padding-top: 20px;
+    padding-bottom: 200px;
 }
-
-@media (max-width: 550px) {
-  .ersteller-name {
-    margin-left: 0;
-    margin-top: 10px;
-  }
+main {
+  padding: 15px;
+}
 }
 
 @media (max-width: 400px) {
@@ -443,78 +465,12 @@ li {
   }
 }
 
-@media (max-width: 550px) {
-  .zutaten-header {
-    display: flex;
-    justify-content: center;
-    font-size: 25px;
-    margin-bottom: 0;
-  }
-}
 
-@media (max-width: 550px) {
-  .ersteller-info img {
-    margin: 0;
-  }
-}
 
-@media (max-width: 550px) {
-  .footer-socials img {
-    height: 40px;
-    width: 40px;
-  }
-}
-@media (max-width: 550px) {
-  .footer-socials {
-    gap: 7px;
-  }
-}
-
-@media (max-width: 550px) {
-  footer {
-    padding-left: 25px;
-    padding-right: 20px;
-  }
-}
-
-@media (max-width: 550px) {
-  .datenschutz-impressum {
-    font-size: 15px;
-    display: flex;
-    flex-direction: column;
-    padding-left: 10px;
-  }
-}
-
-@media (max-width: 550px) {
-  li {
-    font-size: 15px;
-  }
-}
-
-@media (max-width: 550px) {
-  .portion-group {
-    font-size: 15px;
-    justify-content: center;
-    padding-bottom: 10px;
-  }
-}
-
-@media (max-width: 550px) {
-  .zubereitung-zeit-text {
-    font-size: 15px;
-  }
-}
 
 @media (max-width: 480px){
   .header-padding{
     display: block;
     padding-left: 20px;
-  }
-}
-
-@media (max-width: 550px) {
-  .icons img {
-    height: 20px;
   }
 }
