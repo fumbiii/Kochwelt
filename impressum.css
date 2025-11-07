@@ -204,3 +204,10 @@ footer {
         height: 30px;
     }
 }
+
+@media (min-width: 320px) and (max-width: 768px) {
+    button {
+        height: 28px;
+        width: 80px;
+    }
+}
