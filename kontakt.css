@@ -6,7 +6,7 @@ body {
 .content {
     position: relative;
     overflow-x: hidden;
-    height: 137px;
+    height: 165px;
 }
 
 header {
@@ -181,11 +181,10 @@ footer {
   flex-direction: column;
   gap: 7px;
   width: 135px;
-  height: auto;
-
+  height: 140px;
   position: absolute;
 
-  top: 10px;
+  top: 20px;
   right: 0;
   z-index: 1000;
 
@@ -241,6 +240,7 @@ footer {
 @media(min-width: 320px) and (max-width: 768px) {
     main {
         padding: 64px 24px 24px 24px;
+        padding-top: 0px;
     }
     .header-padding {
         padding-left: 16px; 
