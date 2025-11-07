@@ -6,6 +6,7 @@ body {
 .content {
     position: relative;
     overflow-x: hidden;
+    height: 137px;
 }
 
 header {
@@ -180,9 +181,9 @@ footer {
   flex-direction: column;
   gap: 7px;
   width: 135px;
-  height: 140px;
+  height: auto;
 
-  position: fixed;
+  position: absolute;
 
   top: 10px;
   right: 0;
@@ -200,7 +201,7 @@ footer {
 }
 
 .menu_open_button {
-  position: fixed;
+  position: absolute;
   top: 20px;
   right: 20px;
   border-radius: 8px;
