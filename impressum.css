@@ -2,17 +2,24 @@ body {
     min-height: 100vh;
     margin: 0;
     font-family: "Raleway", sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    position: relative;
+    overflow-x: hidden;
+    height: 165px;
 }
 
 main {
+    align-items: center;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 150px;
     flex: 1;
-    padding-left: 136px;
-    padding-right: 136px;
-}
-
-body {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
 }
 
 header {
@@ -49,6 +56,16 @@ header {
     align-items: end;
 }
 
+button {
+  background-color: green;
+  color: white;
+  border: none;
+  height: 30px;
+  padding-right: 16px;
+  padding-left: 16px;
+  cursor: pointer;
+}
+
 .menu-links {
     font-size: 15px;
     color: black;
@@ -61,11 +78,6 @@ header {
     text-decoration-line: underline;
     text-decoration-thickness: 4px;
     text-underline-offset: 10px;
-}
-
-.padding {
-    margin-top: 15%;
-    margin-bottom: 15%;
 }
 
 footer {
@@ -90,57 +102,106 @@ footer {
     margin: 0 auto;
 }
 
-.footer-content img {
+.footer-logo {
     height: 47px;
-}
-
-.footer-socials {
-    display: flex;
-    justify-content: space-evenly;
-    width: 150px;
+    filter: invert(100%);
 }
 
 .datenschutz-impressum {
-    color: white;
     text-decoration: none;
-    padding: 6px;
+    color: white;
+    display: flex;
+    gap: 16px;
 }
 
 .datenschutz-impressum:hover {
     color: green;
 }
 
-.kochwelt-weiß {
-    height: 64px;
-    filter: invert(100%);
+.footer-socials {
+    display: flex;
+    gap: 16px;
+}
+.resp_menu_box {
+  background-color: #ededed;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  width: 135px;
+  height: 140px;
+  position: absolute;
+
+  top: 20px;
+  right: 0;
+  z-index: 1000;
+
+  transition: all 125ms ease-in-out;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 550;
+  margin-right: 10px;
 }
 
-@media (max-width: 550px) {
-    .footer-socials img {
-        height: 40px;
-        width: 40px;
+.resp_menu_closed {
+  transform: translateX(115%);
+}
+
+.menu_open_button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border-radius: 8px;
+  z-index: 999;
+}
+
+.menu_close_button {
+  border-radius: 8px;
+  width: 135px;
+}
+
+.resp-menu-link {
+  text-decoration: none;
+  color: black;
+  padding-left: 5px;
+}
+
+.resp-menu-link:hover {
+  color: #008000;
+}
+
+@media(max-width: 768px) {
+    .menu-right {
+        display: none;
     }
 }
 
-@media (max-width: 550px) {
-    .footer-socials {
-        gap: 2px;
+@media (min-width: 768px) {
+    .menu_open_button {
+        display: none;
+    }
+    .resp_menu_box {
+        display: none;
     }
 }
 
-@media (max-width: 550px) {
+@media(min-width: 320px) and (max-width: 768px) {
+    main {
+        padding: 0px 24px 40px 24px;
+    }
+    .header-padding {
+        padding-left: 16px; 
+        padding-right: 16px;
+    }
     footer {
-        padding-left: 25px;
-        padding-right: 20px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
-}
-
-@media (max-width: 550px) {
     .datenschutz-impressum {
-        font-size: 15px;
-        display: flex;
         flex-direction: column;
-        padding-left: 10px;
+        align-items: center;
+    }
+    .social-img {
+        height: 30px;
     }
 }
 

@@ -1,6 +1,9 @@
 body {
+    min-height: 100vh;
     margin: 0;
     font-family: "Raleway", sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 .content {
@@ -61,7 +64,7 @@ main {
     align-items: center;
     max-width: 1920px;
     margin: 0 auto;
-    padding: 150px;
+    padding: 50px;
     flex: 1;
     display: flex;
     justify-content: center;
@@ -117,6 +120,13 @@ button {
     height: 30px;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
+    cursor: pointer;
+    background-color: green;
+    color: white;
+    border: none;
+    height: 30px;
+    padding-right: 16px;
+    padding-left: 16px;
     cursor: pointer;
 }
 
@@ -245,6 +255,10 @@ footer {
     .header-padding {
         padding-left: 16px;
         padding-right: 16px;
+    }
+    button {
+        width: 80px;
+        height: 28px;
     }
     form {
         width: 100%;
