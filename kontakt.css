@@ -1,15 +1,9 @@
 body {
     margin: 0;
     font-family: "Raleway", sans-serif;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
 }
 
 .content {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    grid-template-columns: minmax(0, 1fr);
     position: relative;
     overflow-x: hidden;
 }
@@ -68,6 +62,8 @@ main {
     margin: 0 auto;
     padding: 150px;
     flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
 form {
@@ -102,7 +98,7 @@ input {
 
 .input-contact {
     height: 28px;
-    width: 350px;
+    width: 100%;
     border-radius: 8px;
     border-style: solid;
     border-color: black;
@@ -132,8 +128,8 @@ button {
     border-radius: 8px;
     margin-top: 16px;
     margin-bottom: 16px;
-    margin-right: 214px;
-    margin-left: 214px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 footer {
@@ -142,6 +138,8 @@ footer {
     align-items: center;
     height: 150px;
     width: 100%;
+    left: 0;
+    bottom: 0;
     padding-left: 50px;
     padding-right: 50px;
 }
@@ -154,11 +152,6 @@ footer {
     width: 100%;
     max-width: 1920px;
     margin: 0 auto;
-}
-
-.kochwelt-weiß {
-    display: flex;
-    align-items: center;
 }
 
 .footer-logo {
@@ -189,10 +182,11 @@ footer {
   width: 135px;
   height: 140px;
 
-  position: absolute;
+  position: fixed;
 
-  top: 20px;
+  top: 10px;
   right: 0;
+  z-index: 1000;
 
   transition: all 125ms ease-in-out;
   border-radius: 8px;
@@ -205,17 +199,12 @@ footer {
   transform: translateX(115%);
 }
 
-.content {
-  position: relative;
-  overflow: hidden;
-  height: 69px;
-}
-
 .menu_open_button {
-  position: absolute;
+  position: fixed;
   top: 20px;
   right: 20px;
   border-radius: 8px;
+  z-index: 999;
 }
 
 .menu_close_button {
@@ -233,127 +222,44 @@ footer {
   color: #008000;
 }
 
-@media (max-width: 800px){
-    form {
-        width: 400px;
-    }
-    .label-contact{
-        width: 350px;
-    }
-    .button-send {
-        margin-left: 115px;
-        margin-right: 115px;
-    }
-}
-    
-@media (max-width: 600px) {
-    form {
-        width: 350px;
-    }
-    .label-contact{
-        width: 300px;
-    }
-    .input-contact {
-        width: 300px;
-    }
-    .button-send {
-        margin-left: 100px;
-        margin-right: 100px;
+@media(max-width: 768px) {
+    .menu-right {
+        display: none;
     }
 }
 
-@media (max-width: 550px) {
+@media (min-width: 768px) {
+    .menu_open_button {
+        display: none;
+    }
+    .resp_menu_box {
+        display: none;
+    }
+}
+
+@media(min-width: 320px) and (max-width: 768px) {
     main {
-        padding-left: 85px;
+        padding: 64px 24px 24px 24px;
     }
-}
-
-@media (max-width: 500px) {
-    main {
-        padding-left: 50px;
-        padding-right: 50px;
+    .header-padding {
+        padding-left: 16px; 
+        padding-right: 16px;
     }
-}
-
-@media (max-width: 450px) {
-    main {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-}
-
-@media (max-width: 400px) {
     form {
-        width: 282px;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+        margin-bottom: 32px;
     }
-    .label-contact {
-        width: 250px;
-    }
-    .input-contact {
-        width: 250px;
-    }
-    .button-send {
-        margin-left: 60px;
-        margin-right: 60px;
-    }
-}
-
-@media (max-width: 550px) {
-    .footer-socials img {
-        height: 40px;
-        width: 40px;
-    }
-}
-
-@media (max-width: 550px) {
-    .footer-socials {
-        gap: 7px;
-    }
-}
-
-@media (max-width: 550px) {
     footer {
-        padding-left: 25px;
-        padding-right: 20px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
-}
-
-@media (max-width: 550px) {
     .datenschutz-impressum {
-        font-size: 15px;
-        display: flex;
         flex-direction: column;
-        padding-left: 10px;
+        align-items: center;
     }
-}
-
-@media (min-width: 681px) {
-  .menu_open_button{
-    display: none;
-  }
-}
-
-@media (max-width: 680px) {
-  .menu-right {
-    display: none;
-  }
-}
-
-@media (max-width: 1000px) {
-  .header-padding {
-    padding-right: 50px;
-  }
-}
-
-@media (max-width: 680px) {
-  .header-padding {
-    justify-content: left;
-  }
-}
-
-@media (max-width: 480px){
-  .header-padding{
-    display: block;
-    padding-left: 20px;
-  }
+    .social-img {
+        height: 30px;
+    }
 }

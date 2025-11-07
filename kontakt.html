@@ -36,6 +36,7 @@
                 </nav>
             </div>
         </header>
+    </div>
         <button class="menu_open_button" onclick="toggleRespMenu()">Menü öffnen</button>
         <div id="resp_menu" class="resp_menu_box resp_menu_closed">
             <button class="menu_close_button" onclick="toggleRespMenu()">Menü schließen</button>
@@ -44,7 +45,7 @@
             <a class="resp-menu-link" href="">Kontakt</a>
             <a class="resp-menu-link" href="">Impressum</a>
         </div>
-    </div>
+
     <main>
         <form action="https://formspree.io/f/mnnzbgpp" method="POST">
             <h3>Kontaktiere uns</h3>
@@ -58,7 +59,7 @@
             </label>
             <label class="label-contact">
                 Betreff:
-                <input class="input-contact" type="text" maxlength="50" required="">
+                <input class="input-contact" type="text" name="_subject" maxlength="50" required="">
             </label>
             <label class="label-contact">
                 Deine Nachricht:
