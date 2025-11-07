@@ -349,7 +349,7 @@ footer {
 
 @media (max-width: 430px) {
     h1 {
-        font-size: 24px;
+        font-size: 21px;
     }
     .icon {
         border-radius: 8px;
@@ -361,6 +361,15 @@ footer {
     }
     .input-number {
         width: 120px;
+    }
+    button {
+        width: 80px;
+    }
+    input {
+        width: 60px;
+    }
+    .marcel-txt {
+        font-size: 14px;
     }
 }
 
