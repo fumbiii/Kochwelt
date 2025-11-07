@@ -138,3 +138,10 @@ footer {
         padding-left: 10px;
     }
 }
+
+@media (min-width: 320px) and (max-width: 768px) {
+    button {
+        height: 28px;
+        width: 80px;
+    }
+}
