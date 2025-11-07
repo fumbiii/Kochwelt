@@ -109,13 +109,14 @@ textarea {
     resize: none;
     border-radius: 8px;
 }
+
 button {
   background-color: green;
   color: white;
   border: none;
   height: 30px;
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
+  padding-right: 16px;
+  padding-left: 16px;
   cursor: pointer;
 }
 
