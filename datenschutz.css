@@ -29,6 +29,7 @@ body {
 }
 
 main {
+    font-size: 14px;
     align-items: center;
     max-width: 1920px;
     margin: 0 auto;
@@ -71,13 +72,13 @@ header {
 }
 
 button {
-  background-color: green;
-  color: white;
-  border: none;
-  height: 30px;
-  padding-right: 16px;
-  padding-left: 16px;
-  cursor: pointer;
+    background-color: green;
+    color: white;
+    border: none;
+    height: 30px;
+    padding-right: 16px;
+    padding-left: 16px;
+    cursor: pointer;
 }
 
 .menu-links {
@@ -138,50 +139,48 @@ footer {
 }
 
 .resp_menu_box {
-  background-color: #ededed;
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
-  width: 135px;
-  height: 140px;
-  position: absolute;
-
-  top: 20px;
-  right: 0;
-  z-index: 1000;
-
-  transition: all 125ms ease-in-out;
-  border-radius: 8px;
-  font-size: 15px;
-  font-weight: 550;
-  margin-right: 10px;
+    background-color: #ededed;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    width: 135px;
+    height: 140px;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    z-index: 1000;
+    transition: all 125ms ease-in-out;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 550;
+    margin-right: 10px;
 }
 
 .resp_menu_closed {
-  transform: translateX(115%);
+    transform: translateX(115%);
 }
 
 .menu_open_button {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  border-radius: 8px;
-  z-index: 999;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border-radius: 8px;
+    z-index: 999;
 }
 
 .menu_close_button {
-  border-radius: 8px;
-  width: 135px;
+    border-radius: 8px;
+    width: 135px;
 }
 
 .resp-menu-link {
-  text-decoration: none;
-  color: black;
-  padding-left: 5px;
+    text-decoration: none;
+    color: black;
+    padding-left: 5px;
 }
 
 .resp-menu-link:hover {
-  color: #008000;
+    color: #008000;
 }
 
 @media(max-width: 768px) {
@@ -200,14 +199,15 @@ footer {
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
-    html, body {
+    html,
+    body {
         overflow-x: hidden;
     }
     main {
         padding: 0px 16px 40px 16px;
     }
     .header-padding {
-        padding-left: 16px; 
+        padding-left: 16px;
         padding-right: 16px;
     }
     footer {
