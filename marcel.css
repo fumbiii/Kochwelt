@@ -274,7 +274,7 @@ footer {
 }
 
 .resp_menu_box {
-    background-color: darkseagreen;
+    background-color: #ededed;
     display: flex;
     flex-direction: column;
     width: 130px;
@@ -354,12 +354,20 @@ footer {
         flex-direction: column;
         padding-left: 10px;
     }
-}
-
-@media (max-width: 550px) {
-    .header-padding {
-        display: block;
-        padding-left: 20px;
+    .creator-responsive {
+        padding: 0;
+    }
+    .creator {
+        flex-direction: column;
+        align-items: center;
+    }
+    .marcel-txt {
+        padding-top: 20px;
+        padding-left: 0;
+    }
+    h4 {
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -386,6 +394,9 @@ footer {
     }
     .marcel-txt {
         font-size: 14px;
+    }
+    .portion-group {
+        justify-content: center;
     }
 }
 
