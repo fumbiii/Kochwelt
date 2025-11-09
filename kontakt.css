@@ -186,7 +186,7 @@ footer {
     text-decoration: none;
     color: white;
     display: flex;
-    gap: 16px;
+    padding: 6px;
 }
 
 .datenschutz-impressum:hover {
@@ -195,7 +195,8 @@ footer {
 
 .footer-socials {
     display: flex;
-    gap: 16px;
+    justify-content: space-evenly;
+    width: 150px;   
 }
 
 .resp_menu_box {
@@ -213,7 +214,7 @@ footer {
     border-radius: 8px;
     font-size: 15px;
     font-weight: 550;
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 .resp_menu_closed {
@@ -263,8 +264,8 @@ footer {
         padding: 0px 8px 24px 8px;
     }
     .header-padding {
-        padding-left: 16px;
-        padding-right: 16px;
+        display: block;
+        padding-left: 20px;
     }
     button {
         width: 80px;
@@ -277,15 +278,21 @@ footer {
         margin-bottom: 32px;
     }
     footer {
-        padding-left: 16px;
-        padding-right: 16px;
+        padding-left: 25px;
+        padding-right: 20px;
+    }
+    .footer-socials {
+        gap: 7px;
     }
     .datenschutz-impressum {
         flex-direction: column;
         align-items: center;
+        padding-left: 10px;
+        font-size: 15px;
     }
     .social-img {
-        height: 30px;
+        height: 40px;
+        width: 40px;
     }
     button {
         height: 28px;
