@@ -137,13 +137,8 @@ button {
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
     cursor: pointer;
-    background-color: green;
-    color: white;
-    border: none;
-    height: 30px;
     padding-right: 16px;
     padding-left: 16px;
-    cursor: pointer;
 }
 
 .button-send {
