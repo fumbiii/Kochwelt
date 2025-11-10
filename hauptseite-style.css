@@ -236,6 +236,15 @@ p {
     width: 150px;
 }
 
+.footer-social-icon {
+    height: 47px;
+    transition: transform 0.6s ease-in-out;
+}
+
+.footer-social-icon:hover {
+    transform: rotateY(360deg);
+}
+
 .datenschutz-impressum {
     color: white;
     text-decoration: none;
