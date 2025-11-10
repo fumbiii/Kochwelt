@@ -314,14 +314,24 @@ footer {
     }
 }
 
+@media(min-width: 768px) and (max-width: 1920px) {
+
+}
+
 @media (min-width: 320px) and (max-width: 768px) {
     h1 {
-        font-size: 26px;
+        font-size: 21px;
         display: flex;
         justify-content: center;
+        white-space: nowrap;
     }
     h2 {
         font-size: 18px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    h4 {
         display: flex;
         justify-content: center;
     }
@@ -333,8 +343,15 @@ footer {
         padding-right: 50px;
     }
     .schwierigkeitsgrad {
-        flex-direction: column;
-        height: auto;
+        height: 40px;
+        justify-content: space-around;
+    }
+    .p-schwierigkeitsgrad {
+        font-size: 10px;
+        white-space: nowrap;
+    }
+    label {
+        white-space: nowrap;
     }
     .portion-group {
         justify-content: center;
@@ -346,11 +363,27 @@ footer {
         width: 80px;
     }
     .section-zubereitung-icons {
-        flex-direction: column;
-        height: auto;
+        height: 40px;
+        padding-top: 10px;
+        justify-content: space-between;
     }
-    .nährwerte {
+    .zubereitungszeit {
+        font-size: 12px;
+    }
+    .p-hinweis {
+        text-align: justify;
+    }
+    .ersteller {
+        padding: 0;
+    }
+    .profile {
+        justify-content: center;
+        flex-direction: column;
         text-align: center;
+        white-space: nowrap;
+    }
+    .name {
+        padding: 0;
     }
     .datenschutz-impressum {
         flex-direction: column;
