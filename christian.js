@@ -44,7 +44,7 @@ function calculate_Kaiserschmarren() {
             formattedAmmount = Math.ceil(newAmmount);
         }
 
-        //Füge den neien Listeneintrag hinzu
+        //Füge den neuen Listeneintrag hinzu
         KaiserschmarrenReference.innerHTML += `<li>${formattedAmmount} ${zutatenSchmarren[i]}</li>`;
     }
 

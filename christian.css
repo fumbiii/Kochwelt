@@ -295,7 +295,7 @@ li {
     border-radius: 8px;
     font-size: 15px;
     font-weight: 550;
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 .resp_menu_closed {
@@ -390,6 +390,7 @@ li {
         font-size: 15px;
         display: flex;
         flex-direction: column;
+        align-items: center;
         padding-left: 10px;
     }
     footer {
