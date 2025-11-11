@@ -201,6 +201,10 @@ ol li span {
     padding-right: 20px;
 }
 
+.semi-bold {
+    font-weight: 600;
+}
+
 .creator {
     display: flex;
     justify-content: flex-start;
@@ -284,9 +288,8 @@ footer {
 }
 
 .resp_menu_box {
-  background-color: #ededed;
-    display: flex
-;
+    background-color: #ededed;
+    display: flex;
     flex-direction: column;
     gap: 7px;
     width: 135px;
