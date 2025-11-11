@@ -196,6 +196,10 @@ ol li span {
     padding: 0px 15px 10px 0;
 }
 
+ol li::marker {
+    font-weight: 500;
+}
+
 .step {
     font-size: 24px;
     padding-right: 20px;
