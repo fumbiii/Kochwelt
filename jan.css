@@ -225,6 +225,10 @@ ul li:nth-child(odd) {
     font-weight: 600;
 }
 
+ol li::marker {
+    font-weight: 500;
+}
+
 h4 {
     padding-top: 24px;
 }
