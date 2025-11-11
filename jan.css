@@ -235,14 +235,15 @@ h4 {
 
 .profile {
     display: flex;
-    justify-content: space-around;
     align-items: center;
+
 }
 
 .profile-pic {
     border-radius: 50%;
     height: 100px;
     width: 100px;
+    border: 2px solid #afadad;
     object-fit: cover;
     object-position: center;
 }
