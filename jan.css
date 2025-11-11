@@ -145,6 +145,10 @@ h1 {
     padding-bottom: 40px;
 }
 
+.p-schwierigkeitsgrad {
+    font-size: 14px;
+}
+
 .icons {
     display: flex;
     align-items: center;
