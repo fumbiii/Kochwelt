@@ -264,7 +264,6 @@ footer {
 
 .footer-socials {
     display: flex;
-    gap: 16px;
     justify-content: space-evenly;
     width: 150px;
 }

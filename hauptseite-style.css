@@ -118,30 +118,6 @@ header {
     border-radius: 8px;
 }
 
-footer {
-    display: flex;
-    background-color: #403b3b;
-    align-items: center;
-    height: 150px;
-    width: 100%;
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100px;
-    width: 100%;
-    max-width: 1920px;
-    margin: 0 auto;
-}
-
-.footer-content img {
-    height: 47px;
-}
-
 .lust-auf-neues-section {
     background-color: #EFEFEF;
 }
@@ -230,24 +206,35 @@ p {
     object-position: center;
 }
 
-.footer-socials {
+footer {
     display: flex;
-    justify-content: space-evenly;
-    width: 150px;
+    background-color: #403b3b;
+    align-items: center;
+    height: 150px;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
-.footer-social-icon {
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.footer-logo {
     height: 47px;
-    transition: transform 0.6s ease-in-out;
-}
-
-.footer-social-icon:hover {
-    transform: rotateY(360deg);
+    filter: invert(100%);
 }
 
 .datenschutz-impressum {
-    color: white;
     text-decoration: none;
+    color: white;
+    display: flex;
     padding: 6px;
 }
 
@@ -255,9 +242,19 @@ p {
     color: green;
 }
 
-.kochwelt-weiß {
-    height: 64px;
-    filter: invert(100%);
+.footer-socials {
+    display: flex;
+    justify-content: space-evenly;
+    width: 150px;
+}
+
+.social-img {
+    height: 47px;
+    transition: transform 0.6s ease-in-out;
+}
+
+.social-img:hover {
+    transform: rotateY(360deg);
 }
 
 button {

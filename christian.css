@@ -80,8 +80,6 @@ footer {
     align-items: center;
     height: 150px;
     width: 100%;
-    left: 0;
-    bottom: 0;
     padding-left: 50px;
     padding-right: 50px;
 }
@@ -96,8 +94,20 @@ footer {
     margin: 0 auto;
 }
 
-.footer-content img {
+.footer-logo {
     height: 47px;
+    filter: invert(100%);
+}
+
+.datenschutz-impressum {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    padding: 6px;
+}
+
+.datenschutz-impressum:hover {
+    color: green;
 }
 
 .footer-socials {
@@ -106,28 +116,13 @@ footer {
     width: 150px;
 }
 
-.footer-social-icon {
+.social-img {
     height: 47px;
     transition: transform 0.6s ease-in-out;
 }
 
-.footer-social-icon:hover {
+.social-img:hover {
     transform: rotateY(360deg);
-}
-
-.kochwelt-weiß {
-    height: 64px;
-    filter: invert(100%);
-}
-
-.datenschutz-impressum {
-    color: white;
-    text-decoration: none;
-    padding: 6px;
-}
-
-.datenschutz-impressum:hover {
-    color: green;
 }
 
 .header-kaiserschmarren {
