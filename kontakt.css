@@ -253,6 +253,13 @@ footer {
     color: #008000;
 }
 
+@media (max-width: 1000px) {
+    .header-padding {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+}
+
 @media(max-width: 768px) {
     .menu-right {
         display: none;

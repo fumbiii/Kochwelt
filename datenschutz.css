@@ -25,7 +25,7 @@ body {
 .content {
     position: relative;
     overflow-x: hidden;
-    height: 165px;
+    height: 75px;
 }
 
 main {
@@ -35,6 +35,8 @@ main {
     margin: 0 auto;
     padding: 80px 136px;
     flex: 1;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 header {
@@ -193,6 +195,13 @@ footer {
     color: #008000;
 }
 
+@media (max-width: 1000px) {
+    .header-padding {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+}
+
 @media(max-width: 768px) {
     .menu-right {
         display: none;
@@ -214,11 +223,17 @@ footer {
         overflow-x: hidden;
     }
     main {
-        padding: 0px 16px 40px 16px;
+        padding-top: 0;
+        padding-right: 16px;
+        padding-left: 16px;
+        padding-bottom: 50px;
     }
     .header-padding {
         display: block;
         padding-left: 20px;
+    }
+    .content {
+        height: 165px;
     }
     footer {
         padding-left: 25px;
