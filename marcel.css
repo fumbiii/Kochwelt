@@ -88,8 +88,7 @@ h1 {
 .difficulty {
     display: flex;
     height: 40px;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    margin-top: 15px;
     margin-bottom: 40px;
 }
 
@@ -110,13 +109,13 @@ label {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #efefef;
+    background-color: #ededed;
     border-radius: 8px;
     margin: 5px;
     gap: 6px;
     padding-right: 10px;
     padding-left: 10px;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .input-div {
@@ -161,7 +160,6 @@ ul {
 li {
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 25px;
     list-style: decimal inside;
     display: flex;
     align-items: center;
@@ -192,7 +190,6 @@ ol {
 
 ol li span {
     display: flex;
-    align-items: top;
     padding: 0px 15px 10px 0;
 }
 
@@ -201,7 +198,7 @@ ol li::marker {
 }
 
 .step {
-    font-size: 24px;
+    font-size: 20px;
     padding-right: 20px;
 }
 
@@ -339,6 +336,18 @@ footer {
     .header-padding {
         padding-right: 50px;
         padding-left: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .difficulty {
+        justify-content: space-around;
+    }
+    .Zubereitung {
+        justify-content: space-around;
+    }
+    .icon {
+        height: 20px;
     }
 }
 
