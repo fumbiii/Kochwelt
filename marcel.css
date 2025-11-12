@@ -208,6 +208,8 @@ ol li::marker {
 
 .semi-bold {
     font-weight: 600;
+    display: block;
+    margin-right: 8px;
 }
 
 .creator {
