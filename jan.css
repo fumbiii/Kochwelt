@@ -87,7 +87,7 @@ h2 {
 .content {
   position: relative;
   overflow: hidden;
-  height: 165px;
+  height: 75px;
 }
 
 .resp_menu_closed {
@@ -208,11 +208,17 @@ ul {
     padding-left: 0px;
 }
 
+ol {
+    padding-left: 0px;
+}
+
 li {
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 10px;
-    text-align: justify;
+    padding-left: 25px;
+    list-style: decimal inside;
+    display: flex;
+    align-items: center;
 }
 
 ul li:nth-child(odd) {
@@ -229,8 +235,14 @@ ul li:nth-child(odd) {
     font-weight: 600;
 }
 
+.step {
+    font-size: 20px;
+    padding-right: 20px;
+}
+
 ol li::marker {
     font-weight: 500;
+    font-size: 20px;
 }
 
 h4 {
@@ -251,7 +263,6 @@ h4 {
     border-radius: 50%;
     height: 100px;
     width: 100px;
-    border: 2px solid #afadad;
     object-fit: cover;
     object-position: center;
 }
@@ -327,10 +338,6 @@ footer {
     }
 }
 
-@media(min-width: 768px) and (max-width: 1920px) {
-
-}
-
 @media (min-width: 320px) and (max-width: 768px) {
     h1 {
         font-size: 21px;
@@ -341,7 +348,6 @@ footer {
     h2 {
         font-size: 18px;
         display: flex;
-        justify-content: center;
         text-align: center;
     }
     h4 {
@@ -354,6 +360,9 @@ footer {
     .header-padding {
         display: block;
         padding-left: 20px;
+    }
+    .content {
+        height: 165px;
     }
     .schwierigkeitsgrad {
         height: 40px;
@@ -370,9 +379,6 @@ footer {
     label {
         white-space: nowrap;
     }
-    .portion-group {
-        justify-content: center;
-    }
     input {
         width: 80px;
     }
@@ -385,7 +391,7 @@ footer {
     .section-zubereitung-icons {
         height: 40px;
         padding-top: 10px;
-        justify-content: space-between;
+        justify-content: space-around;
     }
     .zubereitungszeit {
         font-size: 12px;
