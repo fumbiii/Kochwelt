@@ -160,7 +160,6 @@ ul {
 li {
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 25px;
     list-style: decimal inside;
     display: flex;
     align-items: center;
@@ -191,7 +190,6 @@ ol {
 
 ol li span {
     display: flex;
-    align-items: top;
     padding: 0px 15px 10px 0;
 }
 
@@ -200,7 +198,7 @@ ol li::marker {
 }
 
 .step {
-    font-size: 24px;
+    font-size: 20px;
     padding-right: 20px;
 }
 
@@ -347,6 +345,9 @@ footer {
     }
     .Zubereitung {
         justify-content: space-around;
+    }
+    .icon {
+        height: 20px;
     }
 }
 
