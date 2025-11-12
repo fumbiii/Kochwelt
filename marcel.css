@@ -289,7 +289,7 @@ footer {
 .content {
     position: relative;
     overflow: hidden;
-    height: 165px;
+    height: 75px;
 }
 
 .resp_menu_box {
@@ -353,6 +353,9 @@ footer {
     .icon {
         height: 20px;
         font-size: 10px;
+    }
+    .content {
+        height: 165px;
     }
 }
 
@@ -436,6 +439,7 @@ footer {
     }
     .portion-group {
         justify-content: center;
+        font-size: 13px;
     }
 }
 
