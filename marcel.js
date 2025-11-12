@@ -25,9 +25,13 @@ function calculate_Wildgulasch() {
     WildgulaschReference.innerHTML = '';
 
     // Index-Liste der Zutaten, die gerundet werden sollen
-    // Index 0: 'g Möhren'
-    // Index 1: 'g Frischer Ingwer'
-    // Index 4: 'ml Gemühsebrühe'
+    // Index 0: 'g Wildschweingulasch'
+    // Index 1: 'g Bacon'
+    // Index 2: 'g Zwiebeln'
+    // Index 5: 'ml Rotwein'
+    // Index 6: 'ml Wildfond'
+    // Index 7: 'g Preiselbeeren'
+    // Index 8: 'g Schmand'
     const roundIndices = [0, 1, 2, 5, 6, 7, 8];
 
     // 4. Neue Mengen berechnen und HTML-Einträge hinzufügen
