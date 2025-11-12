@@ -293,7 +293,7 @@ button {
 .content {
     position: relative;
     overflow: hidden;
-    height: 165px;
+    height: 75px;
 }
 
 .menu_open_button {
@@ -316,6 +316,13 @@ button {
 
 .resp-menu-link:hover {
     color: #008000;
+}
+
+@media (max-width: 1000px) {
+    .header-padding {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
 }
 
 @media (max-width: 800px) {
@@ -433,5 +440,8 @@ button {
     button {
         height: 28px;
         width: 80px;
+    }
+    .content {
+        height: 165px;
     }
 }
