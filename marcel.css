@@ -423,8 +423,8 @@ footer {
         border-radius: 8px;
         margin: 5px;
         gap: 6px;
-        padding-right: 10px;
-        padding-left: 10px;
+        padding-right: 5px;
+        padding-left: 5px;
         font-size: 10px;
     }
     .input-number {
