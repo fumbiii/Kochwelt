@@ -263,7 +263,7 @@ button {
     background-color: green;
     color: white;
     border: none;
-    height: 30px;
+    height: 28px;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
     cursor: pointer;
@@ -325,7 +325,35 @@ button {
     }
 }
 
-@media (max-width: 800px) {
+@media(max-width: 768px) {
+    .menu-right {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .menu_open_button {
+        display: none;
+    }
+    .resp_menu_box {
+        display: none;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    main {
+        padding-top: 0px;
+    }
+    .header-padding {
+        display: block;
+        padding-left: 20px;
+    }
+    .content {
+        height: 165px;
+    }
+    button {
+        width: 80px;
+    }
     .lust-auf-neues-rezepte {
         flex-direction: column;
         gap: 35px;
@@ -367,81 +395,24 @@ button {
     .was-ist-besser-h2 {
         text-align: center;
     }
-}
-
-@media (max-width: 550px) {
-    .footer-socials img {
-        height: 40px;
-        width: 40px;
+    .datenschutz-impressum {
+        flex-direction: column;
+        align-items: center;
+        font-size: 15px;
+        padding-left: 10px;
     }
-}
-
-@media (max-width: 550px) {
-    .footer-socials {
-        gap: 7px;
+    .social-img {
+        height: 30px;
     }
-}
-
-@media (max-width: 550px) {
     footer {
         padding-left: 25px;
         padding-right: 20px;
     }
-}
-
-@media (max-width: 550px) {
-    .datenschutz-impressum {
-        font-size: 15px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-left: 10px;
+    .footer-socials{
+        gap:7px;
     }
-}
-
-@media (min-width: 681px) {
-    .menu_open_button {
-        display: none;
-    }
-}
-
-@media (min-width: 680px) {
-    .resp_menu_box {
-        display: none;
-    }
-}
-
-@media (max-width: 680px) {
-    .menu-right {
-        display: none;
-    }
-}
-
-@media (max-width: 1000px) {
-    .header-padding {
-        padding-right: 50px;
-    }
-}
-
-@media (max-width: 680px) {
-    .header-padding {
-        justify-content: left;
-    }
-}
-
-@media (max-width: 480px) {
-    .header-padding {
-        display: block;
-        padding-left: 20px;
-    }
-}
-
-@media (min-width: 320px) and (max-width: 768px) {
-    button {
-        height: 28px;
-        width: 80px;
-    }
-    .content {
-        height: 165px;
+    .footer-socials img {
+        height: 40px;
+        width: 40px;
     }
 }
