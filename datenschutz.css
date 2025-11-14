@@ -20,7 +20,6 @@ body {
     font-family: "Raleway", sans-serif;
     display: flex;
     flex-direction: column;
-    max-width: 1920px;
 }
 
 .content {
@@ -32,7 +31,6 @@ body {
 main {
     font-size: 14px;
     align-items: center;
-    max-width: 1920px;
     margin: 0 auto;
     padding: 80px 136px;
     flex: 1;
@@ -54,6 +52,8 @@ header {
     justify-content: space-between;
     padding-left: 136px;
     padding-right: 136px;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 .kochwelt-logo {
@@ -96,6 +96,11 @@ button {
     text-decoration-line: underline;
     text-decoration-thickness: 4px;
     text-underline-offset: 10px;
+}
+
+.data-protection-section {
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 footer {

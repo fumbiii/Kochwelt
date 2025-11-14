@@ -16,9 +16,11 @@
 }
 
 body {
-  margin: 0;
-  font-family: "Raleway", sans-serif;
-  max-width: 1920px;
+  min-height: 100vh;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -31,6 +33,8 @@ header {
   justify-content: space-between;
   padding-right: 136px;
   padding-left: 136px;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .kochwelt-logo {
@@ -74,9 +78,8 @@ h1 {
 }
 
 main {
+  flex: 1;
   align-items: center;
-  max-width: 1920px;
-  margin: 0 auto;
   padding: 50px;
 }
 
@@ -135,12 +138,16 @@ footer {
   font-size: 32px;
   margin-top: 0;
   margin-bottom: 0;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .shreddedPancake-img {
   display: flex;
   justify-content: center;
   padding-top: 21.44px;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .shreddedPancake-img img {
@@ -155,6 +162,8 @@ footer {
   height: 100px;
   padding-top: 20px;
   padding-bottom: 40px;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .icons {
@@ -176,6 +185,8 @@ footer {
 .portion-group {
   display: flex;
   align-items: center;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 label {
@@ -244,7 +255,6 @@ li {
   align-items: center;
   padding-left: 10px;
 }
-
 .notice-bold {
   font-weight: 500;
 }
@@ -263,6 +273,8 @@ li {
   gap: 16px;
   cursor: default;
   height: 40px;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .preparation-time {
@@ -285,7 +297,10 @@ li {
 }
 
 h2 {
+  margin: 0 auto;
   margin-top: 32px;
+  max-width: 1920px;
+  margin-bottom: 19.920px;
 }
 
 .creator-section {
@@ -296,6 +311,8 @@ h2 {
   display: flex;
   align-items: center;
   padding-bottom: 50px;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .creator-info img {
@@ -359,6 +376,27 @@ h2 {
 
 h4 {
   padding-top: 24px;
+  max-width: 1920px;
+  margin: 0 auto;
+  margin-bottom: 21.44px;
+}
+
+li .ingredients-text {
+  display:flex;
+  align-items: center;
+}
+
+@media (min-width: 1921px) {
+  li .ingredients-text {
+  display:flex;
+  align-items: center;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.step {
+  padding-bottom: 5px;
+  font-size: 20px;
+}
 }
 
 @media (max-width: 1000px) {
@@ -435,6 +473,9 @@ h4 {
   }
   .icons {
     height: 32px;
+  }
+  .preparation-time-text {
+   font-size: 10px;
   }
   .zubereitung {
     height: 40px;

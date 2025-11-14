@@ -18,24 +18,19 @@ body {
     min-height: 100vh;
     margin: 0;
     font-family: "Raleway", sans-serif;
-    max-width: 1920px;
+    display: flex;
+    flex-direction: column;
 }
 
 main {
     flex: 1;
-    max-width: 1920px;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    max-width: 1920px;
-}
+
 
 header {
     min-height: 67px;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
-    max-width: 1920px;
 }
 
 * {
@@ -47,6 +42,8 @@ header {
     justify-content: space-between;
     padding-left: 136px;
     padding-right: 136px;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 .kochwelt-logo {
@@ -82,16 +79,20 @@ header {
 }
 
 .daily-recipe {
+    margin: 0 auto;
     margin-top: 48px;
     margin-bottom: 48px;
     padding-left: 100px;
     padding-right: 100px;
     display: flex;
+    max-width: 1920px;
 }
 
 .daily-recipe-img {
     height: 200px;
     border-radius: 8px;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 .daily-recipe-text {
@@ -128,17 +129,21 @@ header {
 }
 
 .desire-for-new-header {
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     padding-top: 50px;
-    margin: 0;
+    max-width: 1920px;
+
 }
 
 .desire-for-new-recipe {
+    margin: 0 auto;
     display: flex;
     justify-content: space-around;
     margin-top: 25px;
     margin-bottom: 16px;
+    max-width: 1920px;
 }
 
 .desire-for-new-recipe-text {
@@ -178,10 +183,12 @@ p {
 }
 
 .what-is-better {
+    margin: 0 auto;
     padding-left: 100px;
     padding-right: 100px;
     margin-top: 48px;
     margin-bottom: 56px;
+    max-width: 1920px;
 }
 
 .what-is-better-h2 {

@@ -15,9 +15,11 @@
 }
 
 body {
+    min-height: 100vh;
     margin: 0;
     font-family: "Raleway", sans-serif;
-    max-width: 1920px;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -29,11 +31,20 @@ h2 {
     margin-top: 32px;
 }
 
+.preparation-header {
+    max-width: 1920px;
+    margin: 0 auto;
+    margin-top: 32px;
+    margin-bottom: 19.92px;
+}
+
 .header-padding {
     display: flex;
     justify-content: space-between;
     padding-left: 136px;
     padding-right: 136px;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 .kochwelt-logo {
@@ -122,10 +133,15 @@ h2 {
 }
 
 main {
+    flex: 1;
     align-items: center;
+    padding: 50px;
+}
+
+.header-CarrotSoup {
     max-width: 1920px;
     margin: 0 auto;
-    padding: 50px;
+    margin-bottom: 21.44px;
 }
 
 h1 {
@@ -133,20 +149,24 @@ h1 {
 }
 
 .recipe-img {
+    margin: 0 auto;
     height: 175px;
     width: 100%;
     object-fit: cover;
     border-radius: 8px;
+    max-width: 1920px;
 }
 
-.diffculty {
+.difficulty {
+    margin: 0 auto;
     display: flex;
     height: 100px;
     padding-top: 20px;
     padding-bottom: 40px;
+    max-width: 1920px;
 }
 
-.p-diffculty {
+.p-difficulty {
     font-size: 14px;
 }
 
@@ -162,13 +182,15 @@ h1 {
     padding-left: 10px;
 }
 
-.diffculty-img {
+.difficulty-img {
     height: 15px;
 }
 
 .portion-group {
+    margin: 0 auto;
     display: flex;
     align-items: center;
+    max-width: 1920px;
 }
 
 label {
@@ -231,9 +253,22 @@ ul li:nth-child(odd) {
     border-radius: 8px;
 }
 
+li .ingredients-text {
+  display:flex;
+  align-items: center;
+}
+
 .section-preparation-icons {
     display: flex;
     height: 40px;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.Nutritional-Information{
+    max-width: 1920px;
+    margin: 0 auto;
+    margin-top: 32px;
+    margin-bottom: 19.92px;
 }
 
 .semi-bold {
@@ -253,6 +288,11 @@ ul li:nth-child(odd) {
 ol li::marker {
     font-weight: 500;
     font-size: 20px;
+}
+
+.creator {
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 h4 {
@@ -332,6 +372,18 @@ footer {
 .social-img:hover {
     transform: rotateY(360deg);
 }
+@media (min-width: 1921px) {
+  li .ingredients-text {
+  display:flex;
+  align-items: center;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.step {
+  padding-bottom: 5px;
+  font-size: 20px;
+}
+}
 
 @media (max-width: 1000px) {
     .header-padding {
@@ -384,7 +436,7 @@ footer {
     .content {
         height: 165px;
     }
-    .diffculty {
+    .difficulty {
         height: 40px;
         justify-content: space-around;
         margin-bottom: 24px;
@@ -392,7 +444,7 @@ footer {
         padding-top: 0px;
         margin-top: 24px;
     }
-    .p-diffculty {
+    .p-difficulty {
         font-size: 10px;
         white-space: nowrap;
     }
