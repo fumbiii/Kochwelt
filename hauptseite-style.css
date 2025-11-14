@@ -18,6 +18,7 @@ body {
     min-height: 100vh;
     margin: 0;
     font-family: "Raleway", sans-serif;
+    max-width: 1920px;
 }
 
 main {
@@ -28,6 +29,7 @@ main {
 body {
     display: flex;
     flex-direction: column;
+    max-width: 1920px;
 }
 
 header {

@@ -17,6 +17,7 @@
 body {
     margin: 0;
     font-family: "Raleway", sans-serif;
+    max-width: 1920px;
 }
 
 header {
@@ -360,6 +361,9 @@ footer {
     .content {
         height: 165px;
     }
+    main {
+        padding: 0px 25px 25px 25px;
+    }
 }
 
 @media (max-width: 680px) {
@@ -440,9 +444,8 @@ footer {
     .marcel-txt {
         font-size: 14px;
     }
-    .portion-group {
-        justify-content: center;
-        font-size: 13px;
+    label {
+        white-space: nowrap;
     }
 }
 
