@@ -344,7 +344,7 @@ footer {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
     .menu_open_button {
         display: none;
     }
@@ -354,6 +354,9 @@ footer {
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
+    main {
+        padding: 25px;
+    }
     h1 {
         font-size: 21px;
         display: flex;

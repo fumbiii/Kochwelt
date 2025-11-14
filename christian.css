@@ -63,6 +63,10 @@ header {
     text-underline-offset: 10px;
 }
 
+h1 {
+    margin-block-start: 0px;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -126,7 +130,7 @@ footer {
 }
 
 .header-kaiserschmarren {
-    font-size: 36px;
+    font-size: 32px;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -134,46 +138,42 @@ footer {
 .kaiserschmarren-img {
     display: flex;
     justify-content: center;
-    padding-top: 24px;
+    padding-top: 21.440px;
 }
 
 .kaiserschmarren-img img {
     border-radius: 8px;
-    height: 150px;
+    height: 175px;
     width: 100%;
     object-fit: cover;
 }
 
 .schwierigkeitsgrad {
-    display: flex;
-    gap: 16px;
-    align-items: center;
-    height: 40px;
-    padding-top: 50px;
-    padding-bottom: 40px;
-    cursor: default;
+   display: flex;
+   height: 100px;
+   padding-top: 20px;
+   padding-bottom: 40px;
 }
 
 .icons {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f3f4f0;
+    background-color: #ededed;
     border-radius: 8px;
+    margin: 5px;
     gap: 6px;
     padding-right: 10px;
     padding-left: 10px;
 }
 
 .icons img {
-    height: 25px;
+    height: 15px;
 }
 
 .portion-group {
     display: flex;
     align-items: center;
-    padding-top: 20px;
-    padding-bottom: 40px;
 }
 
 label {
@@ -194,13 +194,14 @@ input {
 }
 
 button {
-    background-color: green;
+     background-color: green;
     color: white;
     border: none;
     height: 28px;
+    width: 120px;
+    cursor: pointer;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
-    cursor: pointer;
 }
 
 .input-button {
@@ -217,6 +218,7 @@ button {
 ul {
     list-style: none;
     padding-left: 0px;
+    margin-block-end: 0;
 }
 
 ul li:nth-child(odd) {
@@ -224,10 +226,29 @@ ul li:nth-child(odd) {
     border-radius: 8px;
 }
 
+ol {
+    list-style-position: inside;
+    margin: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding: 0;
+}
+
 li {
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 10px;
+    list-style: decimal inside;
+    display: flex;
+    align-items: center;
+}
+
+.hinweis-bold {
+    font-weight: 500;
+}
+
+.semi-bold {
+    font-weight: 600;
+    margin-right: 8px;
 }
 
 .zubereitung-section {
@@ -238,6 +259,7 @@ li {
     display: flex;
     gap: 16px;
     cursor: default;
+    height: 40px;
 }
 
 .zubereitung-header {
@@ -258,9 +280,13 @@ li {
     height: 25px;
 }
 
-.zubereitung-steps {
-    padding-top: 30px;
-    gap: 22px;
+.step {
+    font-size: 20px;
+    padding-right: 20px;
+}
+
+h2 {
+    margin-top: 32px;
 }
 
 .ersteller-section {
@@ -280,8 +306,6 @@ li {
 }
 
 .ersteller-name {
-    font-size: 18px;
-    font-weight: 600;
     margin-left: 20px;
 }
 
@@ -309,7 +333,7 @@ li {
 .content {
     position: relative;
     overflow: hidden;
-    height: 165px;
+    height: 75px;
 }
 
 .menu_open_button {
@@ -334,166 +358,138 @@ li {
     color: #008000;
 }
 
+h4 {
+    padding-top: 24px;
+}
+
 @media (max-width: 1000px) {
     .header-padding {
         padding-right: 50px;
+        padding-left: 50px;
     }
 }
 
-@media (max-width: 680px) {
+@media(max-width: 768px) {
     .menu-right {
         display: none;
     }
 }
 
-@media (max-width: 680px) {
-    .header-padding {
-        justify-content: left;
-    }
-}
-
-@media (max-width: 680px) {
-    .header-kaiserschmarren {
-        display: flex;
-        justify-content: center;
-    }
-}
-
-@media (min-width: 681px) {
+@media (min-width: 769px) {
     .menu_open_button {
         display: none;
     }
-}
-
-@media (min-width: 680px) {
     .resp_menu_box {
         display: none;
     }
 }
 
-@media (max-width: 550px) {
-    .kaiserschmarren-img {
-        padding-left: 20px;
-        padding-right: 20px;
+@media (min-width: 320px) and (max-width: 768px) {
+    main {
+        padding: 25px;
     }
-    .icons img {
-        height: 20px;
+    h1 {
+        font-size: 21px;
+        display: flex;
+        justify-content: center;
+        white-space: nowrap;
+    }
+    h2 {
+        font-size: 18px;
+        display: flex;
+        text-align: center;
+    }
+    h4 {
+        display: flex;
+        justify-content: center;
+    }
+    main {
+        padding-top: 0px;
+    }
+    .header-padding {
+        display: block;
+        padding-left: 20px;
+    }
+    .content {
+        height: 165px;
+    }
+    .schwierigkeitsgrad {
+        height: 40px;
+        justify-content: space-around;
+        margin-bottom: 24px;
+        padding-bottom: 0px;
+        padding-top: 0px;
+        margin-top: 24px;
+    }
+    .p-schwierigkeitsgrad {
+        font-size: 10px;
+        white-space: nowrap;
+    }
+    label {
+        white-space: nowrap;
+    }
+    input {
+        width: 80px;
+    }
+    button {
+        width: 80px;
+    }
+    .icons {
+        height: 32px;
+    }
+    .zubereitung {
+        height: 40px;
+        padding-top: 10px;
+        justify-content: space-around;
     }
     .zubereitung-zeit-text {
-        font-size: 15px;
+        font-size: 12px;
     }
-    .portion-group {
-        font-size: 15px;
+    .p-hinweis {
+        text-align: justify;
+    }
+    .ersteller {
+        padding: 0;
+    }
+    .ersteller-info{
         justify-content: center;
-        padding-bottom: 10px;
+        flex-direction: column;
+        text-align: center;
+        white-space: nowrap;
+        align-items: center;
     }
-    li {
-        font-size: 15px;
+
+    .ersteller-info img {
+        margin: 0;
+    }
+    .ersteller-name {
+        margin-left: 0;
     }
     .datenschutz-impressum {
-        font-size: 15px;
-        display: flex;
         flex-direction: column;
         align-items: center;
+        font-size: 15px;
         padding-left: 10px;
+    }
+    .social-img {
+        height: 30px;
     }
     footer {
         padding-left: 25px;
         padding-right: 20px;
     }
-    .zutaten-header {
-        display: flex;
-        justify-content: center;
-        font-size: 25px;
-        margin-bottom: 0;
-    }
-    .footer-socials {
-        gap: 7px;
+    .footer-socials{
+        gap:7px;
     }
     .footer-socials img {
         height: 40px;
         width: 40px;
     }
-    .ersteller-info img {
-        margin: 0;
-    }
-    .p-schwierigkeitsgrad {
-        font-size: 15px;
-    }
-    .ersteller-name {
-        margin-left: 0;
-        margin-top: 10px;
-    }
-    .ersteller-info {
+}
+
+@media (max-width: 550px) {
+    .hinweis {
         flex-direction: column;
-        align-items: center;
-        padding-left: 0;
-    }
-    .ersteller-header {
-        display: flex;
-        justify-content: center;
-        padding: 0;
-    }
-    .zubereitung-steps {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    .zubereitung {
-        padding-left: 20px;
-        padding-right: 20px;
-        flex-direction: column;
-    }
-    .zubereitung-header {
-        display: flex;
-        justify-content: center;
-        padding: 0;
-        font-size: 25px;
-    }
-    .zutaten-section {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    .portion-group {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    .portion-group {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    .schwierigkeitsgrad {
-        padding-left: 20px;
-        padding-right: 20px;
-        flex-direction: column;
-        padding-top: 20px;
-        padding-bottom: 200px;
-    }
-    main {
-        padding: 15px;
-    }
-}
-
-@media (max-width: 400px) {
-    .header-kaiserschmarren {
-        font-size: 30px;
-    }
-}
-
-@media (max-width: 400px) {
-    .p-schwierigkeitsgrad {
-        font-size: 15px;
-    }
-}
-
-@media (max-width: 480px) {
-    .header-padding {
-        display: block;
-        padding-left: 20px;
-    }
-}
-
-@media (min-width: 320px) and (max-width: 768px) {
-    button {
-        width: 80px;
+        text-align: justify;
     }
 }

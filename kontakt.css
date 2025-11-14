@@ -266,7 +266,7 @@ footer {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
     .menu_open_button {
         display: none;
     }
