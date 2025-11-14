@@ -143,12 +143,11 @@ header {
     text-align: center;
     margin-top: 5px;
     font-weight: bold;
-    margin-bottom: 100px;
 }
 
 .desire-for-new-recipe img {
     height: 150px;
-    width: 275px;
+    width: 150px;
     border-radius: 8px;
     object-fit: cover;
     object-position: center;
@@ -362,7 +361,7 @@ button {
     }
     .desire-for-new-recipe img {
         height: 150px;
-        width: 250px;
+        width: 150px;
     }
     .daily-recipe {
         flex-direction: column;
@@ -386,7 +385,7 @@ button {
         text-align: justify;
     }
     .desire-for-new-recipe {
-        padding-bottom: 56px;
+        align-items: center;
     }
     .what-is-better {
         padding-left: 16px;

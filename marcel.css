@@ -78,7 +78,7 @@ h1 {
     margin-block-start: 0;
 }
 
-.Wildgulasch {
+.Wildgoulash {
     height: 180px;
     width: 100%;
     object-fit: cover;
@@ -171,7 +171,7 @@ ul li:nth-child(odd) {
     border-radius: 8px;
 }
 
-.varianteBold {
+.variantBold {
     font-weight: 500;
 }
 
@@ -179,7 +179,7 @@ h2 {
     margin-bottom: 0;
 }
 
-.Zubereitung {
+.preparation {
     display: flex;
     height: 40px;
     padding-top: 10px;
@@ -253,7 +253,7 @@ footer {
     margin: 0 auto;
 }
 
-.kochwelt-weiß {
+.kochwelt-white {
     display: flex;
     align-items: center;
 }
@@ -263,14 +263,14 @@ footer {
     filter: invert(100%);
 }
 
-.datenschutz-impressum {
+.data-protection-imprint {
     text-decoration: none;
     color: white;
     display: flex;
     padding: 6px;
 }
 
-.datenschutz-impressum:hover {
+.data-protection-imprint:hover {
     color: green;
 }
 
@@ -388,7 +388,7 @@ footer {
         padding-left: 25px;
         padding-right: 20px;
     }
-    .datenschutz-impressum {
+    .data-protection-imprint {
         font-size: 15px;
         display: flex;
         flex-direction: column;
@@ -410,7 +410,7 @@ footer {
         display: flex;
         justify-content: center;
     }
-    .variante {
+    .variant {
         display: flex;
         flex-direction: column;
     }
