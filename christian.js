@@ -13,10 +13,16 @@ let ingredientsRecipe = [
 function calculateShreddedPancake() {
   let portions = parseFloat(document.getElementById("input-portion").value);
 
+  const maxPortions = 10;
+
   if (portions < 1 || isNaN(portions)) {
     portions = 1;
-
     document.getElementById("input-portion").value = 1;
+  }
+
+  if (portions > maxPortions) { 
+      portions = maxPortions;
+      document.getElementById("input-portion").value = maxPortions;
   }
 
   let ShreddedPancakeReference = document.getElementById(
