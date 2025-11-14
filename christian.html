@@ -44,24 +44,24 @@
         </div>
     </div>
     <main>
-        <section class="kaiserschmarren-section">
-            <h1 class="header-kaiserschmarren">Kaiserschmarren</h1>
-            <div class="kaiserschmarren-img">
-                <img class="Kaiserschmarren" src="img/kaiserschmarren.jpg" alt="Kaiserschmarren Bild" />
+        <section class="shreddedPancake-section">
+            <h1 class="header-shreddedPancake">Kaiserschmarren</h1>
+            <div class="shreddedPancake-img">
+                <img class="shreddedPancake" src="img/kaiserschmarren.jpg" alt="ShreddedPancake Picture" />
             </div>
-            <section class="schwierigkeitsgrad-section">
-                <div class="schwierigkeitsgrad">
+            <section class="difficulty-section">
+                <div class="difficulty">
                     <div class="icons">
-                        <img class="schwierigkeitsgrad-img" src="./img/icons/clock-regular.svg" alt="clock-img" />
-                        <p class="p-schwierigkeitsgrad">30 Min.</p>
+                        <img class="difficulty-img" src="./img/icons/clock-regular.svg" alt="clock-img" />
+                        <p class="p-difficulty">30 Min.</p>
                     </div>
                     <div class="icons">
-                        <img class="schwierigkeitsgrad-img" src="./img/icons/brain-solid.svg" alt="brain-img" />
-                        <p class="p-schwierigkeitsgrad">leicht</p>
+                        <img class="difficulty" src="./img/icons/brain-solid.svg" alt="brain-img" />
+                        <p class="p-difficulty">leicht</p>
                     </div>
                     <div class="icons">
-                        <img class="schwierigkeitsgrad-img" src="./img/icons/calendar-alt-regular.svg" alt="calender-img" />
-                        <p class="p-schwierigkeitsgrad">01.11.2025</p>
+                        <img class="difficulty-img" src="./img/icons/calendar-alt-regular.svg" alt="calender-img" />
+                        <p class="p-difficulty">01.11.2025</p>
                     </div>
                 </div>
             </section>
@@ -70,15 +70,15 @@
                 <label for="input-portion">Zutaten für</label>
                 <div class="input-button">
                     <input id="input-portion" type="number" max="8" min="1" value="1" />
-                    <button id="ingredients-button" type="submit" onclick="calculate_Kaiserschmarren()">
+                    <button id="ingredients-button" type="submit" onclick="calculateShreddedPancake()">
             Portionen
           </button>
                 </div>
             </div>
         </section>
 
-        <section class="zutaten-section">
-            <ul id="zutatenListKaiserschmarren" class="zutaten-liste">
+        <section class="ingredients-section">
+            <ul id="PortionsListShreddedPancake" class="ingredients-list">
                 <li>300 ml Milch</li>
                 <li>200 g Mehl</li>
                 <li>2 EL Zucker</li>
@@ -91,16 +91,16 @@
             </ul>
         </section>
 
-        <section class="zubereitung-section">
+        <section class="preparation-section">
             <h2>Zubereitung</h2>
-            <div class="zubereitung">
+            <div class="preparation">
                 <div class="icons">
-                    <img class="zubereitung-zeit-img" src="img/icons/clock-regular.svg" alt="clock-img" />
-                    <p class="zubereitung-zeit-text">ca. 30 Minuten</p>
+                    <img class="preparation-time-img" src="img/icons/clock-regular.svg" alt="clock-img" />
+                    <p class="preparation-time-text">ca. 30 Minuten</p>
                 </div>
                 <div class="icons">
-                    <img class="zubereitung-zeit-img" src="img/icons/clock-regular.svg" alt="clock-img" />
-                    <p class="zubereitung-zeit-text">Gesamtzeit ca. 30 Minuten</p>
+                    <img class="preparation-time-img" src="img/icons/clock-regular.svg" alt="clock-img" />
+                    <p class="preparation-time-text">Gesamtzeit ca. 30 Minuten</p>
                 </div>
             </div>
             <ol>
@@ -141,9 +141,9 @@
                     </p>
                 </li>
 
-                <li class="hinweis">
-                    <span class="step hinweis-bold">Hinweis:</span>
-                    <p>Wer mag, kann den Kaiserschmarren auch mit Rosinen verfeinern. Diese einfach vor dem Backen in den Teig geben.</p>
+                <li class="notice">
+                    <span class="step notice-bold">Hinweis:</span>
+                    <p class="p-notice">Wer mag, kann den Kaiserschmarren auch mit Rosinen verfeinern. Diese einfach vor dem Backen in den Teig geben.</p>
                 </li>
             </ol>
         </section>
@@ -151,18 +151,18 @@
         <section>
             <h2>Nährwertangaben pro Portion</h2>
             <ul>
-                <li class="nährwerte"><span class="semi-bold">Energie:</span> 569 kcal</li>
-                <li class="nährwerte"><span class="semi-bold">Eiweiß:</span> 19.94 g</li>
-                <li class="nährwerte"><span class="semi-bold">Fett:</span> 21.98 g</li>
-                <li class="nährwerte"><span class="semi-bold">Kohlenhydrate:</span> 74.72 g</li>
+                <li><span class="semi-bold">Energie:</span> 569 kcal</li>
+                <li><span class="semi-bold">Eiweiß:</span> 19.94 g</li>
+                <li><span class="semi-bold">Fett:</span> 21.98 g</li>
+                <li><span class="semi-bold">Kohlenhydrate:</span> 74.72 g</li>
             </ul>
         </sections>
 
-        <section class="ersteller-section">
-            <h4 class="ersteller-header">Rezept erstellt von</h4>
-            <div class="ersteller-info">
-                <img class="ersteller-img " src="img/profile.png" alt="Christian Bild" />
-                <p class="ersteller-name">Christian</p>
+        <section class="creator-section">
+            <h4 class="creator-header">Rezept erstellt von</h4>
+            <div class="creator-info">
+                <img class="creator-img " src="img/profile.png" alt="Christian Bild" />
+                <p class="creator-name">Christian</p>
             </div>
 
 
@@ -174,9 +174,9 @@
             <a href="index.html">
                 <img class="footer-logo" src="./img/logo_small.png" alt="Kochwelt-Logo weiß">
             </a>
-            <div class="datenschutz-impressum">
-                <a class="datenschutz-impressum" href="datenschutz.html">Datenschutz</a>
-                <a class="datenschutz-impressum" href="impressum.html">Impressum</a>
+            <div class="data-protection-imprint">
+                <a class="data-protection-imprint" href="datenschutz.html">Datenschutz</a>
+                <a class="data-protection-imprint" href="impressum.html">Impressum</a>
             </div>
             <div class="footer-socials">
                 <a href="https://de-de.facebook.com/" target="_blank">

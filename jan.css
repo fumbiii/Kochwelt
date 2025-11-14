@@ -131,21 +131,21 @@ h1 {
     margin-block-start: 0px;
 }
 
-.rezept-img {
+.recipe-img {
     height: 175px;
     width: 100%;
     object-fit: cover;
     border-radius: 8px;
 }
 
-.schwierigkeitsgrad {
+.diffculty {
     display: flex;
     height: 100px;
     padding-top: 20px;
     padding-bottom: 40px;
 }
 
-.p-schwierigkeitsgrad {
+.p-diffculty {
     font-size: 14px;
 }
 
@@ -161,7 +161,7 @@ h1 {
     padding-left: 10px;
 }
 
-.schwierigkeitsgrad-img {
+.diffculty-img {
     height: 15px;
 }
 
@@ -222,6 +222,7 @@ li {
     list-style: decimal inside;
     display: flex;
     align-items: center;
+    padding-left: 10px;
 }
 
 ul li:nth-child(odd) {
@@ -229,7 +230,7 @@ ul li:nth-child(odd) {
     border-radius: 8px;
 }
 
-.section-zubereitung-icons {
+.section-preparation-icons {
     display: flex;
     height: 40px;
 }
@@ -244,7 +245,7 @@ ul li:nth-child(odd) {
     padding-right: 20px;
 }
 
-.hinweis-bold {
+.notice-bold {
     font-weight: 500;
 }
 
@@ -305,14 +306,14 @@ footer {
     filter: invert(100%);
 }
 
-.datenschutz-impressum {
+.data-protection-imprint {
     text-decoration: none;
     color: white;
     display: flex;
     padding: 6px;
 }
 
-.datenschutz-impressum:hover {
+.data-protection-imprint:hover {
     color: green;
 }
 
@@ -382,7 +383,7 @@ footer {
     .content {
         height: 165px;
     }
-    .schwierigkeitsgrad {
+    .diffculty {
         height: 40px;
         justify-content: space-around;
         margin-bottom: 24px;
@@ -390,7 +391,7 @@ footer {
         padding-top: 0px;
         margin-top: 24px;
     }
-    .p-schwierigkeitsgrad {
+    .p-diffculty {
         font-size: 10px;
         white-space: nowrap;
     }
@@ -406,18 +407,18 @@ footer {
     .icons {
         height: 32px;
     }
-    .section-zubereitung-icons {
+    .section-preparation-icons {
         height: 40px;
         padding-top: 10px;
         justify-content: space-around;
     }
-    .zubereitungszeit {
+    .preparationtime {
         font-size: 12px;
     }
-    .p-hinweis {
+    .p-notice {
         text-align: justify;
     }
-    .ersteller {
+    .creator {
         padding: 0;
     }
     .profile {
@@ -429,7 +430,7 @@ footer {
     .name {
         padding: 0;
     }
-    .datenschutz-impressum {
+    .data-protection-imprint {
         flex-direction: column;
         align-items: center;
         font-size: 15px;
@@ -452,7 +453,7 @@ footer {
 }
 
 @media (max-width: 550px) {
-    .hinweis {
+    .notice {
         flex-direction: column;
         text-align: justify;
     }

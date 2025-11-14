@@ -22,6 +22,7 @@ body {
 
 main {
     flex: 1;
+    max-width: 1920px;
 }
 
 body {
@@ -32,6 +33,7 @@ body {
 header {
     min-height: 67px;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+    max-width: 1920px;
 }
 
 * {
@@ -77,7 +79,7 @@ header {
     text-underline-offset: 10px;
 }
 
-.tagesrezept {
+.daily-recipe {
     margin-top: 48px;
     margin-bottom: 48px;
     padding-left: 100px;
@@ -85,29 +87,29 @@ header {
     display: flex;
 }
 
-.tagesrezept-img {
+.daily-recipe-img {
     height: 200px;
     border-radius: 8px;
 }
 
-.tagesrezept-text {
+.daily-recipe-text {
     padding-left: 24px;
 }
 
-.tagesrezept-header {
+.daily-recipe-header {
     font-size: 20px;
     margin-top: 0px;
     margin-bottom: 16px;
     font-weight: 600;
 }
 
-.tagesrezept-beschreibung {
+.daily-recipe-description {
     font-size: 14px;
     margin-bottom: 48px;
     text-align: justify;
 }
 
-.tagesrezept-button {
+.daily-recipe-button {
     color: white;
     background-color: #008000;
     text-decoration: none;
@@ -119,34 +121,34 @@ header {
     border-radius: 8px;
 }
 
-.lust-auf-neues-section {
+.desire-for-new-section {
     background-color: #EFEFEF;
 }
 
-.lust-auf-neues-header {
+.desire-for-new-header {
     display: flex;
     justify-content: center;
     padding-top: 50px;
     margin: 0;
 }
 
-.lust-auf-neues-rezepte {
+.desire-for-new-recipe {
     display: flex;
     justify-content: space-around;
-    padding-top: 25px;
-    padding-bottom: 100px;
+    margin-top: 25px;
 }
 
-.lust-auf-neues-rezepte-text {
+.desire-for-new-recipe-text {
     font-size: 14px;
     text-align: center;
     margin-top: 5px;
     font-weight: bold;
+    margin-bottom: 100px;
 }
 
-.lust-auf-neues-rezepte img {
+.desire-for-new-recipe img {
     height: 150px;
-    width: 150px;
+    width: 275px;
     border-radius: 8px;
     object-fit: cover;
     object-position: center;
@@ -161,26 +163,26 @@ p {
     text-decoration: none;
 }
 
-.rezept-text {
+.recipe-text {
     text-decoration: none;
     color: black;
 }
 
-.rezept-text:hover {
+.recipe-text:hover {
     color: #008000;
     text-decoration-line: underline;
     text-decoration-thickness: 4px;
     text-underline-offset: 10px;
 }
 
-.was-ist-besser {
+.what-is-better {
     padding-left: 100px;
     padding-right: 100px;
     margin-top: 48px;
     margin-bottom: 56px;
 }
 
-.was-ist-besser-h2 {
+.what-is-better-h2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -189,18 +191,18 @@ p {
     margin-bottom: 32px;
 }
 
-.was-ist-besser-pimg {
+.what-is-better-pimg {
     display: flex;
     justify-content: space-between;
 }
 
-.was-ist-besser-p {
+.what-is-better-p {
     font-size: 14px;
     padding-right: 30px;
     text-align: justify;
 }
 
-.was-ist-besser-img {
+.what-is-better-img {
     height: 150px;
     width: 150px;
     border-radius: 8px;
@@ -233,14 +235,14 @@ footer {
     filter: invert(100%);
 }
 
-.datenschutz-impressum {
+.data-protection-imprint {
     text-decoration: none;
     color: white;
     display: flex;
     padding: 6px;
 }
 
-.datenschutz-impressum:hover {
+.data-protection-imprint:hover {
     color: green;
 }
 
@@ -354,48 +356,55 @@ button {
     button {
         width: 80px;
     }
-    .lust-auf-neues-rezepte {
+    .desire-for-new-recipe {
         flex-direction: column;
         gap: 35px;
     }
-    .tagesrezept {
+    .desire-for-new-recipe img {
+        height: 150px;
+        width: 250px;
+    }
+    .daily-recipe {
         flex-direction: column;
         align-items: center;
         text-align: center;
         padding-top: 24px;
         margin-top: 0px;
-        padding-left: 56px;
-        padding-right: 56px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
-    .tagesrezept-img {
+    .daily-recipe-img {
         height: 160px;
     }
-    .tagesrezept-header {
+    .daily-recipe-header {
         padding-top: 24px;
     }
-    .tagesrezept-beschreibung {
+    .daily-recipe-text {
+        padding-left: 0px;
+    }
+    .daily-recipe-description {
         text-align: justify;
     }
-    .lust-auf-neues-rezepte {
+    .desire-for-new-recipe {
         padding-bottom: 56px;
     }
-    .was-ist-besser {
-        padding-left: 56px;
-        padding-right: 56px;
+    .what-is-better {
+        padding-left: 16px;
+        padding-right: 16px;
     }
-    .was-ist-besser-p {
+    .what-is-better-p {
         text-align: justify;
         padding-right: 0px;
         margin-bottom: 24px;
     }
-    .was-ist-besser-pimg {
+    .what-is-better-pimg {
         flex-direction: column;
         align-items: center;
     }
-    .was-ist-besser-h2 {
+    .what-is-better-h2 {
         text-align: center;
     }
-    .datenschutz-impressum {
+    .data-protection-imprint {
         flex-direction: column;
         align-items: center;
         font-size: 15px;

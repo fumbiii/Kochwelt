@@ -1,61 +1,52 @@
-/* Basis-Arrays Wildgulasch */
-// Basis-Mengen für 1 Portion
-let ammountWildgulasch = [250, 25, 250, 0.5, 0.75, 87, 125, 50, 37, 0.25, 0.25, 0.25, 0.38, 0.38, 0.38];
-let zutatenWildgulasch = ['g Wildgulasch', 'g Bacon', 'g Zwiebeln', 'Stück Knoblauchzehen', 'EL Tomatenmark', 'ml Rotwein', 'ml Wildfond', 'g Preiselbeeren', 'g Schmand', 'TL Rosmarin', 'TL Majoran', 'TL Kümmelpulver', 'TL Thymian', 'TL Paprikapulver (Edelsüß)', 'TL Paprikapulver (Rosenscharf)'];
+let ammountRecipe = [
+  250, 25, 250, 0.5, 0.75, 87, 125, 50, 37, 0.25, 0.25, 0.25, 0.38, 0.38, 0.38,
+];
+let ingredientsRecipe = [
+  "g Wildschweingulasch",
+  "g Bacon (gewürfelt)",
+  "g Zwiebel",
+  "Stück Knoblauchzehe(n)",
+  "EL Tomatenmark",
+  "ml Rotwein",
+  "ml Wildfond oder Fleischbrühe",
+  "g Preiselbeeren",
+  "g Schmand",
+  "TL Rosmarin",
+  "TL Majoran",
+  "TL Kümmelpulver",
+  "TL Thymian",
+  "TL Paprikapulver (Edelsüß)",
+  "TL Paprikapulver (Rosenscharf)",
+];
 
-/* Die Hauptfunktion: Liest, berechnet und aktualisiert */
-function calculate_Wildgulasch() {
-    // 1. Wert der Portionen auslesen
-    // parseFloat stellt sicher, dass wir mit einer Zahl rechnen können
-    let portions = parseFloat(document.getElementById('input-portion').value);
+function calculateWildGoulash() {
+  let portions = parseFloat(document.getElementById("input-portion").value);
 
-    // VALIDIERUNG: Prüfen, ob der Wert negativ oder Null ist (oder NaN)
-    if (portions < 1 || isNaN(portions)) {
-        // Setze die Portionen auf den Mindestwert 1
-        portions = 1;
+  if (portions < 1 || isNaN(portions)) {
+    portions = 1;
 
-        // Optional: Den Wert im Input-Feld korrigieren, damit der Benutzer es sieht
-        document.getElementById('input-portion').value = 1;
+    document.getElementById("input-portion").value = 1;
+  }
+
+  let WildGoulashReference = document.getElementById("ingredientsListWildGoulash");
+
+  WildGoulashReference.innerHTML = "";
+
+  const roundIndices = [0, 1, 2, 5, 6, 7, 8];
+
+  for (let i = 0; i < ammountRecipe.length; i++) {
+    let newAmmount = ammountRecipe[i] * portions;
+
+    if (roundIndices.includes(i)) {
+      formattedAmmount = Math.round(newAmmount);
+    } else {
+      formattedAmmount = newAmmount.toFixed(2);
     }
 
-    // 2. Referenz auf die Zutatenliste holen
-    let WildgulaschReference = document.getElementById('zutatenlistWildgulasch');
+    WildGoulashReference.innerHTML += `<li>${newAmmount} ${ingredientsRecipe[i]}</li>`;
+  }
 
-    // 3. Liste leeren (für die neuen Einträge)
-    WildgulaschReference.innerHTML = '';
+  WildGoulashReference.innerHTML += `<li>Salz, Pfeffer (Schwarz)</li>`;
 
-    // Index-Liste der Zutaten, die gerundet werden sollen
-    // Index 0: 'g Wildschweingulasch'
-    // Index 1: 'g Bacon'
-    // Index 2: 'g Zwiebeln'
-    // Index 5: 'ml Rotwein'
-    // Index 6: 'ml Wildfond'
-    // Index 7: 'g Preiselbeeren'
-    // Index 8: 'g Schmand'
-    const roundIndices = [0, 1, 2, 5, 6, 7, 8];
-
-    // 4. Neue Mengen berechnen und HTML-Einträge hinzufügen
-    for (let i = 0; i < ammountWildgulasch.length; i++) {
-        // Multipliziere die Basis-Menge mit der gewünschten Portionsanzahl
-
-        let newAmmount = ammountWildgulasch[i] * portions;
-
-
-        // Überprüfung, ob der aktuelle Index gerundet werden soll
-        if (roundIndices.includes(i)) {
-            // Runden auf die nächste ganze Zahl (z.B. 100.5 -> 101, 100.4 -> 100)
-            formattedAmmount = Math.round(newAmmount);
-        } else {
-            // Standardformatierung für alle anderen Zutaten (2 Dezimalstellen)
-            formattedAmmount = newAmmount.toFixed(2);
-        }
-
-        // Füge den neuen Listeneintrag hinzu
-        WildgulaschReference.innerHTML += `<li>${newAmmount} ${zutatenWildgulasch[i]}</li>`;
-    }
-
-    // 5. Den letzten Eintrag ohne Mengenangabe wieder hinzufügen
-    WildgulaschReference.innerHTML += `<li>Salz, Pfeffer (Schwarz)</li>`;
-
-    console.log(`Zutatenliste für ${portions} Portion(en) aktualisiert.`);
+  console.log(`Zutatenliste für ${portions} Portion(en) aktualisiert.`);
 }

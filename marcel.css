@@ -163,6 +163,7 @@ li {
     list-style: decimal inside;
     display: flex;
     align-items: center;
+    padding-left: 10px;
 }
 
 ul li:nth-child(odd) {

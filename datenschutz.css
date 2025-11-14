@@ -124,14 +124,14 @@ footer {
     filter: invert(100%);
 }
 
-.datenschutz-impressum {
+.data-protection-imprint {
     text-decoration: none;
     color: white;
     display: flex;
     padding: 6px;
 }
 
-.datenschutz-impressum:hover {
+.data-protection-imprint:hover {
     color: green;
 }
 
@@ -242,7 +242,7 @@ footer {
     .footer-socials {
         gap: 7px;
     }
-    .datenschutz-impressum {
+    .data-protection-imprint {
         font-size: 15px;
         flex-direction: column;
         justify-content: center;
