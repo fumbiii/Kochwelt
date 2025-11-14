@@ -20,6 +20,7 @@ body {
     font-family: "Raleway", sans-serif;
     display: flex;
     flex-direction: column;
+    max-width: 1920px;
 }
 
 .content {

@@ -37,6 +37,4 @@ function calulateCarrotSoup() {
   }
 
   CarrotSoupReference.innerHTML += `<li>Salz und Pfeffer</li>`;
-
-  console.log(`Zutatenliste für ${portions} Portion(en) aktualisiert.`);
 }

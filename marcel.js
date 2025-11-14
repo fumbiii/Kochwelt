@@ -47,6 +47,4 @@ function calculateWildGoulash() {
   }
 
   WildGoulashReference.innerHTML += `<li>Salz, Pfeffer (Schwarz)</li>`;
-
-  console.log(`Zutatenliste für ${portions} Portion(en) aktualisiert.`);
 }
