@@ -32,15 +32,16 @@ main {
     font-size: 14px;
     align-items: center;
     margin: 0 auto;
-    padding: 80px 136px;
+    padding: 50px 50px 50px 50px;
     flex: 1;
-    padding-top: 50px;
-    padding-bottom: 50px;
 }
 
 header {
     min-height: 67px;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100%;
 }
 
 * {
@@ -50,8 +51,6 @@ header {
 .header-padding {
     display: flex;
     justify-content: space-between;
-    padding-left: 136px;
-    padding-right: 136px;
     max-width: 1920px;
     margin: 0 auto;
 }
@@ -201,13 +200,6 @@ footer {
     color: #008000;
 }
 
-@media (max-width: 1000px) {
-    .header-padding {
-        padding-right: 50px;
-        padding-left: 50px;
-    }
-}
-
 @media(max-width: 768px) {
     .menu-right {
         display: none;
@@ -234,19 +226,19 @@ footer {
         padding-left: 16px;
         padding-bottom: 50px;
     }
-    .header-padding {
-        display: block;
-        padding-left: 20px;
-    }
     .content {
         height: 165px;
     }
+    header {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
     footer {
-        padding-left: 25px;
-        padding-right: 20px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
     .footer-socials {
-        gap: 7px;
+        gap: 16px;
     }
     .data-protection-imprint {
         font-size: 15px;
