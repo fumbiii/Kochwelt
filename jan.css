@@ -405,13 +405,6 @@ footer {
   font-size: 20px;
 }
 
-@media (max-width: 1000px) {
-    .header-padding {
-        padding-right: 50px;
-        padding-left: 50px;
-    }
-}
-
 @media(max-width: 768px) {
     .menu-right {
         display: none;
@@ -448,10 +441,6 @@ footer {
     }
     main {
         padding-top: 0px;
-    }
-    .header-padding {
-        display: block;
-        padding-left: 20px;
     }
     .content {
         height: 165px;
@@ -517,7 +506,7 @@ footer {
         padding-right: 20px;
     }
     .footer-socials{
-        gap:7px;
+        gap: 16px;
     }
     .footer-socials img {
         height: 40px;
