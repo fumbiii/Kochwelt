@@ -26,6 +26,11 @@ main {
     flex: 1;
 }
 
+.main-padding {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
 header {
     min-height: 67px;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
@@ -78,7 +83,7 @@ header {
 }
 
 .daily-recipe {
-    margin: 0 auto;
+    margin: auto;
     margin-top: 48px;
     margin-bottom: 48px;
     display: flex;
@@ -123,6 +128,8 @@ header {
 
 .desire-for-new-section {
     background-color: #EFEFEF;
+    width: 100%;
+    padding-bottom: 50px;
 }
 
 .desire-for-new-header {
@@ -327,6 +334,15 @@ button {
     .menu-right {
         display: none;
     }
+    .daily-recipe-img {
+        height: 150px;
+    }
+}
+
+@media(max-width: 390px) {
+    .daily-recipe-img {
+        height: 120px;
+    }
 }
 
 @media (min-width: 769px) {
@@ -364,9 +380,6 @@ button {
         margin-top: 0px;
         padding-left: 16px;
         padding-right: 16px;
-    }
-    .daily-recipe-img {
-        height: 160px;
     }
     .daily-recipe-header {
         padding-top: 24px;
