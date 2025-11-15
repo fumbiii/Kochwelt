@@ -279,6 +279,13 @@ li .ingredients-text {
     margin-bottom: 19.92px;
 }
 
+section:has(.Nutritional-Information) ul {
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+}
+
 .semi-bold {
     font-weight: 600;
     margin-right: 8px;
@@ -374,7 +381,7 @@ footer {
 .footer-socials {
     display: flex;
     justify-content: space-evenly;
-    width: 150px;
+    gap: 24px;
 }
 
 .social-img {

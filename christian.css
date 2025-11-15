@@ -122,7 +122,7 @@ footer {
 .footer-socials {
   display: flex;
   justify-content: space-evenly;
-  width: 150px;
+  gap: 24px;
 }
 
 .social-img {
