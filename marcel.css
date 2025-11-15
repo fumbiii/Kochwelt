@@ -429,12 +429,12 @@ footer {
     main {
         padding: 0px 25px 25px 25px;
     }
-}
-
-@media (max-width: 680px) {
     .menu-right {
         display: none;
     }
+}
+
+@media (max-width: 680px) {
     .header-padding {
         display: block;
     }
@@ -513,7 +513,7 @@ footer {
     }
 }
 
-@media (min-width: 680px) {
+@media (min-width: 769px) {
     .menu_open_button {
         display: none;
     }

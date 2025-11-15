@@ -26,8 +26,6 @@ main {
     flex: 1;
 }
 
-
-
 header {
     min-height: 67px;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
@@ -83,8 +81,6 @@ header {
     margin: 0 auto;
     margin-top: 48px;
     margin-bottom: 48px;
-    padding-left: 100px;
-    padding-right: 100px;
     display: flex;
     max-width: 1920px;
 }
@@ -135,7 +131,6 @@ header {
     justify-content: center;
     padding-top: 50px;
     max-width: 1920px;
-
 }
 
 .desire-for-new-recipe {
@@ -185,8 +180,6 @@ p {
 
 .what-is-better {
     margin: 0 auto;
-    padding-left: 100px;
-    padding-right: 100px;
     margin-top: 48px;
     margin-bottom: 56px;
     max-width: 1920px;
@@ -409,7 +402,7 @@ button {
         font-size: 15px;
         padding-left: 10px;
     }
-    .footer-socials{
+    .footer-socials {
         gap: 16px;
     }
     .footer-socials img {
