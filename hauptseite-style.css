@@ -31,6 +31,9 @@ main {
 header {
     min-height: 67px;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100%;
 }
 
 * {
@@ -40,8 +43,6 @@ header {
 .header-padding {
     display: flex;
     justify-content: space-between;
-    padding-left: 136px;
-    padding-right: 136px;
     max-width: 1920px;
     margin: 0 auto;
 }
@@ -329,13 +330,6 @@ button {
     color: #008000;
 }
 
-@media (max-width: 1000px) {
-    .header-padding {
-        padding-right: 50px;
-        padding-left: 50px;
-    }
-}
-
 @media(max-width: 768px) {
     .menu-right {
         display: none;
@@ -354,10 +348,6 @@ button {
 @media (min-width: 320px) and (max-width: 768px) {
     main {
         padding-top: 0px;
-    }
-    .header-padding {
-        display: block;
-        padding-left: 20px;
     }
     .content {
         height: 165px;
@@ -419,15 +409,8 @@ button {
         font-size: 15px;
         padding-left: 10px;
     }
-    .social-img {
-        height: 30px;
-    }
-    footer {
-        padding-left: 25px;
-        padding-right: 20px;
-    }
     .footer-socials{
-        gap:7px;
+        gap: 16px;
     }
     .footer-socials img {
         height: 40px;
