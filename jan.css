@@ -25,6 +25,9 @@ body {
 header {
     height: 67px;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100%;
 }
 
 h2 {
@@ -41,8 +44,6 @@ h2 {
 .header-padding {
     display: flex;
     justify-content: space-between;
-    padding-left: 136px;
-    padding-right: 136px;
     max-width: 1920px;
     margin: 0 auto;
 }
@@ -247,6 +248,12 @@ ol {
     padding: 0;
 }
 
+section:has(.preparation-header) ol {
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 li {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -392,17 +399,10 @@ footer {
 .social-img:hover {
     transform: rotateY(360deg);
 }
-@media (min-width: 1921px) {
-  li .ingredients-text {
-  display:flex;
-  align-items: center;
-  max-width: 1920px;
-  margin: 0 auto;
-}
+
 .step {
   padding-bottom: 5px;
   font-size: 20px;
-}
 }
 
 @media (max-width: 1000px) {
