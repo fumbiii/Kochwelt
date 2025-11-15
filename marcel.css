@@ -258,13 +258,6 @@ ol li::marker {
     margin-bottom: 19.92px;
 }
 
-.Nutritional-Information {
-    max-width: 1920px;
-    margin: 0 auto;
-    margin-top: 32px;
-    margin-bottom: 19.92px;
-}
-
 section:has(.Nutritional-Information) ul {
     max-width: 1920px;
     margin-left: auto;
